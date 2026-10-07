@@ -1,0 +1,1009 @@
+:root {
+  --primary-green: #0b2029;
+  --dark-green: #f2f0e8;
+  --gold-accent: #c8b27a;
+  --gold-hover: #191918;
+  --gold-light: #ead9a8;
+
+  --bg-light: #d0d3d5;
+  --card-bg: #102b35;
+
+  --text-main: #f1f0eb;
+  --text-muted: #aeb9b9;
+
+  --border-color: rgba(255, 255, 255, 0.11);
+  --radius-lg: 20px;
+  --radius-md: 10px;
+  --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.18);
+  --shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-light);
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.page-container {
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(47, 83, 92, 0.18),
+      transparent 45%
+    ),
+    var(--bg-light);
+}
+
+.content-wrapper,
+.details-wrapper {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+
+.main-header h1 {
+  margin: 0 0 0.8rem;
+  color: #f2f0e8;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.statues-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(320px, 1fr));
+
+  gap: 26px;
+}
+
+.home {
+  width: 100%;
+
+  overflow: hidden;
+
+  background:#f8f9fa;
+
+  color: #f1f0eb;
+
+  font-family: Arial, sans-serif;
+}
+
+
+.hero {
+  min-height: 820px;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 20, 28, 0.9),
+      rgba(7, 25, 33, 0.6),
+      rgba(7, 25, 33, 0.2)
+    ),
+    url("horrse.jpg");
+
+  background-size: cover;
+
+  background-position:center;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.hero-overlay {
+  width: 100%;
+}
+
+.hero-content {
+  width: min(1200px, 90%);
+
+  margin: auto;
+
+  color: white;
+}
+
+.hero-content > span {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  padding: 8px 14px;
+
+  border:
+    1px solid rgba(224, 204, 145, 0.6);
+
+  border-radius: 30px;
+
+  color: var(--gold-light);
+
+  font-size: 13px;
+
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #f5f1e7;
+
+  font-size: clamp(48px, 7vw, 90px);
+
+  line-height: 0.98;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.hero p {
+  max-width: 600px;
+
+  margin: 25px 0 35px;
+
+  color:
+    rgba(255, 255, 255, 0.8);
+
+  font-size: 20px;
+
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  padding: 15px 25px;
+
+  border-radius: 8px;
+
+  background: var(--gold-accent);
+
+  color: #081b24;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+  background: var(--gold-hover);
+  color:rgb(240, 239, 239);
+  transform: translateY(-3px);
+}
+
+.hero-buttons .secondary-btn {
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.4);
+
+  color: white;
+}
+
+.hero-buttons .secondary-btn:hover {
+  background: white;
+
+  color: #081b24;
+}
+
+.intro {
+  position: relative;
+
+  width: min(1000px, 90%);
+
+  margin: auto;
+
+  padding: 120px 0 100px;
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+
+
+.intro > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* LABEL */
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: rgb(63, 62, 62);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+/* TITLE */
+
+.intro h2 {
+  margin: 0 0 25px;
+
+  color: #303a40;
+
+  font-size: clamp(32px, 5vw, 52px);
+
+  line-height: 1.1;
+
+  font-weight: 800;
+}
+
+
+/* PARAGRAPH */
+
+.intro p {
+  max-width: 760px;
+
+  margin: 15px auto;
+
+  color: #6b6b6b;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+/* ==========================================
+   CATEGORIES SECTION
+   ========================================== */
+.categories {
+  width: min(1200px, 92%);
+  margin: 0 auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  position: relative;
+  min-height: 420px;
+  padding: 40px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* ბარათების ფონური სურათები */
+.category-card.museum-card {
+  background-image: url("images.jpeg"); /* მიუთითეთ თქვენი ფოტოს გზა */
+}
+
+.category-card.statue-category-card {
+   background-image: url("alaverdi.jpeg");
+}
+
+/* მუქი გრადიენტის overlay ფოტოს ზემოდან, რომ ტექსტი კარგად გამოჩნდეს */
+.category-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 35, 27, 0.15) 0%,
+    rgba(15, 35, 27, 0.7) 60%,
+    rgba(15, 35, 27, 0.95) 100%
+  );
+  transition: opacity 0.4s ease;
+}
+
+/* შიგთავსი */
+.category-card > div {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  transform: translateY(10px);
+  transition: transform 0.4s ease;
+}
+
+.category-card h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.category-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 24px;
+  max-width: 480px;
+}
+
+/* ღილაკი / ლინკი */
+.category-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e4c887; /* Gold light accent */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover ეფექტები */
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(24, 56, 43, 0.25);
+}
+
+.category-card:hover::before {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 35, 27, 0.1) 0%,
+    rgba(15, 35, 27, 0.75) 50%,
+    rgba(15, 35, 27, 0.98) 100%
+  );
+}
+
+.category-card:hover > div {
+  transform: translateY(0);
+}
+
+.category-card:hover a {
+  color: #ffffff;
+  transform: translateX(6px);
+}
+
+/* რესპონსივი (მობილურებისთვის) */
+@media (max-width: 600px) {
+  .categories {
+    margin-bottom: 60px;
+  }
+
+  .category-card {
+    min-height: 350px;
+    padding: 28px;
+    border-radius: 18px;
+  }
+
+  .category-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .category-card p {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+}
+/* ==========================================
+   FEATURED
+========================================== */
+
+.featured {
+  padding: 110px 0;
+
+  background: #0a2029;
+}
+
+.section-heading {
+  width: min(1200px, 90%);
+
+  margin: 0 auto 45px;
+}
+
+.featured-grid {
+  width: min(1200px, 90%);
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.heritage-card {
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: #102b35;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.3s;
+}
+
+.heritage-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: var(--shadow-hover);
+
+  border-color:
+    rgba(200, 178, 122, 0.25);
+}
+
+.heritage-image {
+  height: 260px;
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.kvetera {
+  background-image:
+    url("https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Kvetera1.jpg/500px-Kvetera1.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail");
+}
+
+.alaverdi {
+  background-image:
+    url("https://cdn.georgiantravelguide.com/storage/thumbnails/dji-0906-1-2.jpg");
+}
+
+.tusheti {
+  background-image:
+    url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Keselo%2C_Tusheti.jpg/960px-Keselo%2C_Tusheti.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail");
+}
+
+.heritage-content {
+  padding: 25px;
+}
+
+.heritage-content > span {
+  color: var(--gold-accent);
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.heritage-content h3 {
+  margin: 10px 0;
+
+  color: #f2f0e8;
+
+  font-size: 23px;
+}
+
+.heritage-content p {
+  margin-bottom: 20px;
+
+  color: #aeb9b9;
+
+  line-height: 1.6;
+}
+
+.heritage-content a {
+  color: var(--gold-light);
+
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about {
+  width: min(1200px, 90%);
+
+  margin: auto;
+
+  padding: 110px 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about-image {
+  min-height: 550px;
+
+  border-radius: var(--radius-lg);
+
+  background-image:
+    linear-gradient(
+      rgba(5, 20, 28, 0.15),
+      rgba(5, 20, 28, 0.15)
+    ),
+    url("/horses.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.about-content p {
+  margin: 0 0 18px;
+
+  color: #4d4e4e;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.main-button {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 14px 24px;
+
+  border-radius: 8px;
+
+  background: var(--gold-accent);
+
+  color: #081b24;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.main-button:hover {
+  background: rgb(16, 18, 29);
+ color : rgb(249, 248, 248);
+  transform: translateY(-3px);
+}
+
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+.stats {
+  padding: 90px 5%;
+
+  background: #061720;
+
+  color: white;
+}
+
+.stats-title {
+  text-align: center;
+
+  margin-bottom: 55px;
+}
+
+.stats-title > span {
+  color: var(--gold-accent);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.stats-title h2 {
+  margin: 10px 0 0;
+
+  color: #f2f0e8;
+
+  font-size: 42px;
+}
+
+.stats-grid {
+  width: min(1100px, 100%);
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.15);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat {
+  padding: 35px 20px;
+
+  text-align: center;
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--gold-light);
+
+  font-size: 45px;
+}
+
+.stat span {
+  color:
+    rgba(255, 255, 255, 0.7);
+
+  font-size: 15px;
+}
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+.cta {
+  padding: 120px 20px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(5, 20, 28, 0.5),
+      rgba(5, 20, 28, 0.94)
+    ),
+    url("horse2.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+}
+#titleB{
+  color:#252424e0;
+}
+
+.cta > span {
+  color: var(--gold-accent);
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.cta h2 {
+  margin: 15px 0;
+
+  color: #f2f0e8;
+
+  font-size: clamp(38px, 6vw, 65px);
+
+  line-height: 1.05;
+}
+
+.cta p {
+  margin-bottom: 30px;
+
+  color:
+    rgba(255, 255, 255, 0.7);
+
+  font-size: 17px;
+}
+
+.cta a {
+  display: inline-block;
+
+  padding: 15px 28px;
+
+  border-radius: 8px;
+
+  background: var(--gold-accent);
+
+  color: #081b24;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background:rgba(45, 45, 45, 0.586);
+  color:rgb(240, 240, 240);
+  transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #061720;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #29434c;
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-accent);
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about-image {
+    min-height: 450px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat:nth-child(-n + 2) {
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .page-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-content {
+    width: 88%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+  /* INTRO */
+
+  .intro {
+    padding: 75px 0;
+  }
+
+  .intro h2,
+  .section-heading h2,
+  .about h2 {
+    font-size: 35px;
+  }
+
+
+  /* CATEGORIES */
+
+  .categories {
+    width: 92%;
+
+    margin-bottom: 70px;
+  }
+
+  .category-card {
+    min-height: 330px;
+
+    padding: 30px;
+  }
+
+
+  /* FEATURED */
+
+  .featured {
+    padding: 75px 0;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heritage-image {
+    height: 230px;
+  }
+
+
+  /* ABOUT */
+
+  .about {
+    width: 92%;
+
+    padding: 75px 0;
+  }
+
+  .about-image {
+    min-height: 350px;
+  }
+
+
+  /* STATS */
+
+  .stats {
+    padding: 70px 20px;
+  }
+
+  .stats-title h2 {
+    font-size: 34px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat {
+    padding: 25px 10px;
+  }
+
+  .stat strong {
+    font-size: 35px;
+  }
+
+  .stat span {
+    font-size: 13px;
+  }
+
+
+  /* CTA */
+
+  .cta {
+    padding: 85px 20px;
+  }
+
+
+  /* DETAILS */
+
+  .details-body {
+    padding: 1.5rem;
+  }
+
+  .details-header-group {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .details-hero-image,
+  .details-hero-image img {
+    max-height: 350px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* PAGINATION */
+
+  .pagination {
+    gap: 0.7rem;
+
+    flex-wrap: wrap;
+  }
+
+  .btn-page {
+    padding: 10px 18px;
+  }
+}
