@@ -12,8 +12,7 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-container">
-        
-        {/* ბრენდი / აღწერა */}
+      
         <div className="footer-column brand-col">
           <div className="footer-logo">
             <FaCompass className="logo-icon" />
