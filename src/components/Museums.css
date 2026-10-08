@@ -79,7 +79,7 @@ body {
       rgba(0, 0, 0, 0.06),
       rgba(0, 0, 0, 0.34)
     ),
-    url("12.jpg");
+    url("/museumCover.jpg");
 
   background-size: cover;
   background-position: center;
