@@ -4,33 +4,26 @@
   --gold-accent: #c8b27a;
   --gold-hover: #191918;
   --gold-light: #ead9a8;
-
   --bg-light: #d0d3d5;
   --card-bg: #102b35;
-
   --text-main: #f1f0eb;
   --text-muted: #aeb9b9;
-
   --border-color: rgba(255, 255, 255, 0.11);
   --radius-lg: 20px;
   --radius-md: 10px;
   --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.18);
   --shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
-
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   background: var(--bg-light);
   color: var(--text-main);
-  font-family: Arial, sans-serif;
   min-height: 100vh;
 }
 
@@ -38,38 +31,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-button,
-input {
-  font-family: inherit;
-}
-
-.page-container {
-  min-height: 100vh;
-  padding: 4rem 1.5rem;
-  display: flex;
-  justify-content: center;
-
-  background:
-    radial-gradient(
-      circle at top,
-      rgba(47, 83, 92, 0.18),
-      transparent 45%
-    ),
-    var(--bg-light);
-}
-
-.content-wrapper,
-.details-wrapper {
-  width: min(1200px, 100%);
-  margin: 0 auto;
-}
-
 .main-header {
   text-align: center;
   margin-bottom: 2.8rem;
 }
-
 .main-header h1 {
   margin: 0 0 0.8rem;
   color: #f2f0e8;
@@ -81,29 +46,20 @@ input {
 
 .statues-grid {
   display: grid;
-
   grid-template-columns:
     repeat(auto-fill, minmax(320px, 1fr));
-
   gap: 26px;
 }
 
 .home {
   width: 100%;
-
   overflow: hidden;
-
   background:#f8f9fa;
-
   color: #f1f0eb;
-
-  font-family: Arial, sans-serif;
 }
-
 
 .hero {
   min-height: 820px;
-
   background-image:
     linear-gradient(
       90deg,
@@ -112,13 +68,9 @@ input {
       rgba(7, 25, 33, 0.2)
     ),
     url("horrse.jpg");
-
   background-size: cover;
-
   background-position:center;
-
   display: flex;
-
   align-items: center;
 }
 
@@ -128,71 +80,49 @@ input {
 
 .hero-content {
   width: min(1200px, 90%);
-
   margin: auto;
-
   color: white;
 }
 
 .hero-content > span {
   display: inline-block;
-
   margin-bottom: 20px;
-
   padding: 8px 14px;
-
   border:
     1px solid rgba(224, 204, 145, 0.6);
-
   border-radius: 30px;
-
   color: var(--gold-light);
-
   font-size: 13px;
-
   letter-spacing: 3px;
 }
 
 .hero h1 {
   max-width: 800px;
-
   margin: 0;
-
   color: #f5f1e7;
-
   font-size: clamp(48px, 7vw, 90px);
-
   line-height: 0.98;
-
   font-weight: 800;
-
   letter-spacing: -2px;
 }
 
 .hero p {
   max-width: 600px;
-
   margin: 25px 0 35px;
-
   color:
     rgba(255, 255, 255, 0.8);
-
   font-size: 20px;
-
   line-height: 1.6;
 }
 
 .hero-buttons {
   display: flex;
-
   gap: 14px;
-
   flex-wrap: wrap;
 }
 
 .hero-buttons a {
   padding: 15px 25px;
-
   border-radius: 8px;
 
   background: var(--gold-accent);
@@ -239,36 +169,20 @@ input {
 
   overflow: hidden;
 }
-
-
-
 .intro > * {
   position: relative;
   z-index: 2;
 }
 
-
-/* LABEL */
-
 .section-label {
   display: inline-block;
-
   margin-bottom: 15px;
-
-  color: rgb(63, 62, 62);
-
+  color: rgb(180, 180, 180);
   font-size: 13px;
-
   font-weight: 800;
-
   letter-spacing: 2px;
-
   text-transform: uppercase;
 }
-
-
-/* TITLE */
-
 .intro h2 {
   margin: 0 0 25px;
 
@@ -280,25 +194,14 @@ input {
 
   font-weight: 800;
 }
-
-
-/* PARAGRAPH */
-
 .intro p {
   max-width: 760px;
-
   margin: 15px auto;
-
   color: #6b6b6b;
-
   font-size: 17px;
-
   line-height: 1.8;
 }
 
-/* ==========================================
-   CATEGORIES SECTION
-   ========================================== */
 .categories {
   width: min(1200px, 92%);
   margin: 0 auto 100px auto;
@@ -322,17 +225,14 @@ input {
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
               box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-/* ბარათების ფონური სურათები */
 .category-card.museum-card {
-  background-image: url("images.jpeg"); /* მიუთითეთ თქვენი ფოტოს გზა */
+  background-image: url("images.jpeg");
 }
 
 .category-card.statue-category-card {
    background-image: url("alaverdi.jpeg");
 }
 
-/* მუქი გრადიენტის overlay ფოტოს ზემოდან, რომ ტექსტი კარგად გამოჩნდეს */
 .category-card::before {
   content: "";
   position: absolute;
@@ -345,8 +245,6 @@ input {
   );
   transition: opacity 0.4s ease;
 }
-
-/* შიგთავსი */
 .category-card > div {
   position: relative;
   z-index: 2;
@@ -371,19 +269,17 @@ input {
   max-width: 480px;
 }
 
-/* ღილაკი / ლინკი */
 .category-card a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-size: 1rem;
   font-weight: 700;
-  color: #e4c887; /* Gold light accent */
+  color: #e4c887; 
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover ეფექტები */
 .category-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(24, 56, 43, 0.25);
@@ -407,7 +303,7 @@ input {
   transform: translateX(6px);
 }
 
-/* რესპონსივი (მობილურებისთვის) */
+
 @media (max-width: 600px) {
   .categories {
     margin-bottom: 60px;
@@ -428,9 +324,7 @@ input {
     margin-bottom: 18px;
   }
 }
-/* ==========================================
-   FEATURED
-========================================== */
+
 
 .featured {
   padding: 110px 0;
@@ -540,11 +434,6 @@ input {
   font-weight: 700;
 }
 
-
-/* ==========================================
-   ABOUT
-========================================== */
-
 .about {
   width: min(1200px, 90%);
 
@@ -611,13 +500,6 @@ input {
  color : rgb(249, 248, 248);
   transform: translateY(-3px);
 }
-
-
-
-/* ==========================================
-   STATS
-========================================== */
-
 .stats {
   padding: 90px 5%;
 
@@ -651,27 +533,20 @@ input {
 }
 
 .stats-grid {
-  width: min(1100px, 100%);
-
+  width: min(1300px, 100%);
   margin: auto;
-
   display: grid;
-
   grid-template-columns:
-    repeat(4, 1fr);
-
+    repeat(5, 1fr);
   border-top:
     1px solid rgba(255, 255, 255, 0.15);
-
   border-bottom:
     1px solid rgba(255, 255, 255, 0.15);
 }
 
 .stat {
   padding: 35px 20px;
-
   text-align: center;
-
   border-right:
     1px solid rgba(255, 255, 255, 0.15);
 }
@@ -696,12 +571,6 @@ input {
 
   font-size: 15px;
 }
-
-
-/* ==========================================
-   CTA
-========================================== */
-
 .cta {
   padding: 120px 20px;
 
@@ -776,10 +645,6 @@ input {
 }
 
 
-/* ==========================================
-   SCROLLBAR
-========================================== */
-
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -798,10 +663,6 @@ input {
   background: var(--gold-accent);
 }
 
-
-/* ==========================================
-   RESPONSIVE - TABLET
-========================================== */
 
 @media (max-width: 900px) {
 
@@ -840,12 +701,6 @@ input {
       1px solid rgba(255, 255, 255, 0.15);
   }
 }
-
-
-/* ==========================================
-   RESPONSIVE - MOBILE
-========================================== */
-
 @media (max-width: 600px) {
 
   .page-container {
@@ -882,9 +737,6 @@ input {
     text-align: center;
   }
 
-
-  /* INTRO */
-
   .intro {
     padding: 75px 0;
   }
@@ -894,9 +746,6 @@ input {
   .about h2 {
     font-size: 35px;
   }
-
-
-  /* CATEGORIES */
 
   .categories {
     width: 92%;
@@ -911,8 +760,6 @@ input {
   }
 
 
-  /* FEATURED */
-
   .featured {
     padding: 75px 0;
   }
@@ -925,9 +772,6 @@ input {
     height: 230px;
   }
 
-
-  /* ABOUT */
-
   .about {
     width: 92%;
 
@@ -937,9 +781,6 @@ input {
   .about-image {
     min-height: 350px;
   }
-
-
-  /* STATS */
 
   .stats {
     padding: 70px 20px;
@@ -964,16 +805,9 @@ input {
   .stat span {
     font-size: 13px;
   }
-
-
-  /* CTA */
-
   .cta {
     padding: 85px 20px;
   }
-
-
-  /* DETAILS */
 
   .details-body {
     padding: 1.5rem;
@@ -993,9 +827,6 @@ input {
   .info-grid {
     grid-template-columns: 1fr;
   }
-
-
-  /* PAGINATION */
 
   .pagination {
     gap: 0.7rem;

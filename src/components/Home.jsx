@@ -29,7 +29,6 @@ function Home() {
         </div>
       </section>
 
-      {/* INTRO SECTION */}
       <section className="intro">
         <span className="section-label">ახმეტის მუნიციპალიტეტი</span>
 
@@ -137,7 +136,7 @@ function Home() {
         </div>
       </section>
 
-      {/* ABOUT AKHMETA */}
+     
       <section className="about">
         <div className="about-image" role="img" aria-label="ახმეტის ხედი"></div>
 
@@ -167,7 +166,7 @@ function Home() {
         </div>
       </section>
 
-      {/* STATS SECTION */}
+     
       <section className="stats">
         <div className="stats-title">
           <span>AKHMETA INFO</span>
@@ -181,7 +180,7 @@ function Home() {
           </div>
 
           <div className="stat">
-            <strong>100+</strong>
+            <strong>150+</strong>
             <span>კულტურული ობიექტი</span>
           </div>
 
@@ -194,10 +193,14 @@ function Home() {
             <strong>1</strong>
             <span>უნიკალური თუშეთი</span>
           </div>
+          <div className="stat">
+            <strong>1</strong>
+            <span>ისტორიული პანკისის ხეობა</span>
+          </div>
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
+  
       <section className="cta">
         <span>აღმოაჩინე ახმეტა</span>
 

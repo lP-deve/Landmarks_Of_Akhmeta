@@ -5,7 +5,7 @@ import './statues.css';
 
 const ITEMS_PER_PAGE = 9;
 const FALLBACK_IMAGE =
-  'https://via.placeholder.com/600x400?text=No+Image+Available';
+  'https://www.pinterest.com/pin/249527635599756601/';
 
 function Statues() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -33,8 +33,6 @@ function Statues() {
   const totalPages = Math.ceil(
     filteredStatues.length / ITEMS_PER_PAGE
   );
-
-  // თუ URL-ში მითითებული გვერდი აღარ არსებობს
   const validPage =
     totalPages > 0
       ? Math.min(currentPage, totalPages)
@@ -69,8 +67,6 @@ function Statues() {
     const value = e.target.value;
 
     setSearchTerm(value);
-
-    // ძებნისას პირველ გვერდზე დაბრუნება
     setCurrentPage(1);
 
     setSearchParams({
@@ -79,14 +75,17 @@ function Statues() {
   };
 
   return (
+    <>
+    
     <div className="page-container">
-      <div className="content-wrapper">
         <header className="main-header">
+        <div className="bg">
           <h1>კულტურული მემკვიდრეობის ძეგლები</h1>
           <p>ახმეტის მუნიციპალიტეტის ისტორიული ობიექტები</p>
+        </div>
         </header>
-
-        {/* Search */}
+        
+      <div className="content-wrappers">
         <div className="search-wrapper">
           <input
             type="text"
@@ -145,7 +144,7 @@ function Statues() {
                     </h2>
 
                     <p className="card-address">
-                      📍{' '}
+                      {' '}
                       {item['ფაქტიური მისამართი'] ||
                         'მისამართი მითითებული არ არის'}
                     </p>
@@ -200,7 +199,7 @@ function Statues() {
           </div>
         )}
       </div>
-    </div>
+    </div></>
   );
 }
 

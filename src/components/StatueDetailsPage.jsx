@@ -50,7 +50,7 @@ function StatueDetailsPage() {
     <div className="page-container">
       <div className="details-wrapper">
 
-        {/* ვბრუნდებით ზუსტად იმ გვერდზე, საიდანაც შემოვედით */}
+        
         <Link
           to={`/statues?page=${page}`}
           className="btn-back"
