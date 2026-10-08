@@ -7,6 +7,7 @@ import Museums from "./components/Museums";
 import MuseumDetails from "./components/MuseumDetails";
 import Statues from "./components/Statues";
 import StatueDetailsPage from "./components/StatueDetailsPage";
+import Footer from "./Footer";
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/statues/:id" element={<StatueDetailsPage/>} />
 
       </Routes>
+      <Footer/>
     </>
   );
 }
