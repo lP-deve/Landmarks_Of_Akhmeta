@@ -62,7 +62,7 @@ body {
       rgba(0, 0, 0, 0.06),
       rgba(0, 0, 0, 0.34)
     ),
-    url("castel.jpg");
+    url("/alaverd2.jpg");
 
   background-size: cover;
   background-position: center;
@@ -91,7 +91,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.288);
 
   backdrop-filter: blur(2px);
 

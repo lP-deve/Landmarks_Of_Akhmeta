@@ -910,20 +910,7 @@ body {
 
 
 @media (max-width: 950px) {
-  .museums-header {
-    min-height: 480px;
-
-    background:
-      linear-gradient(
-        rgba(202, 154, 81, 0.271),
-        rgba(191, 191, 191, 0.062)
-      ),
-      url("history.jpg");
-
-    background-size: cover;
-    background-position: center;
-  }
-
+  
   .museum-controls {
     flex-direction: column;
 
