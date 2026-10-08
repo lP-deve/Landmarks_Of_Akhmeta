@@ -11,7 +11,7 @@ export const museums = [
     price: "უფასო",
     event: "რაფიელობის ყოველწლიური დღესასწაული, ღამე მუზეუმში",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVrPOXlaJ6BeUBX33xO1EpkQyg_f7aZMzs5AtvypJAQ&s=10",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVr_CB5C_2fdvXYMewVfBBP-b8mx60jcyqCilb3h6rjw&s=10",
     history:
       "ქისტაურის რაფიელ ერისთავის სახლ-მუზეუმი დაარსდა 1951 წელს. მისი ექსპოზიცია შედგება 4 საგამოფენო დარბაზისა და სამუშაო ოთახისაგან. მუზეუმში ინახება მწერლის ცხოვრებისა და მოღვაწეობის ამსახველი 6003 სხვადასხვა სახის სამეცნიერო და დამხმარე მასალა.",
   },

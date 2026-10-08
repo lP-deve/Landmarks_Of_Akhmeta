@@ -1,3 +1,5 @@
+
+
 :root {
   --primary-green: #0b2029;
   --dark-green: #f2f0e8;
@@ -9,57 +11,72 @@
   --text-main: #f1f0eb;
   --text-muted: #aeb9b9;
   --border-color: rgba(255, 255, 255, 0.11);
-  --radius-lg: 20px;
+
+  --radius-lg: 18px;
   --radius-md: 10px;
+
   --shadow-sm: 0 5px 20px rgba(0, 0, 0, 0.18);
-  --shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 18px 35px rgba(0, 0, 0, 0.3);
 }
+
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
+  min-height: 100vh;
   background: var(--bg-light);
   color: var(--text-main);
-  min-height: 100vh;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-}
-.main-header {
-  text-align: center;
-  margin-bottom: 2.8rem;
-}
-.main-header h1 {
-  margin: 0 0 0.8rem;
-  color: #f2f0e8;
-  font-size: clamp(32px, 5vw, 52px);
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -1px;
+  text-decoration: none;
 }
 
-.statues-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fill, minmax(320px, 1fr));
-  gap: 26px;
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .home {
   width: 100%;
   overflow: hidden;
-  background:#f8f9fa;
+  background: #f8f9fa;
   color: #f1f0eb;
 }
 
+.main-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0 0 0.6rem;
+  color: #f2f0e8;
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.statues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+
 .hero {
-  min-height: 820px;
+  min-height: 540px;
+
+  display: flex;
+  align-items: center;
+
   background-image:
     linear-gradient(
       90deg,
@@ -68,10 +85,9 @@ a {
       rgba(7, 25, 33, 0.2)
     ),
     url("/horrse.jpg");
+
   background-size: cover;
-  background-position:center;
-  display: flex;
-  align-items: center;
+  background-position: center;
 }
 
 .hero-overlay {
@@ -79,56 +95,59 @@ a {
 }
 
 .hero-content {
-  width: min(1200px, 90%);
-  margin: auto;
+  width: min(1100px, 88%);
+  margin: 0 auto;
   color: white;
 }
 
 .hero-content > span {
   display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 14px;
-  border:
-    1px solid rgba(224, 204, 145, 0.6);
+
+  margin-bottom: 16px;
+  padding: 7px 12px;
+
+  border: 1px solid rgba(224, 204, 145, 0.6);
   border-radius: 30px;
+
   color: var(--gold-light);
-  font-size: 13px;
-  letter-spacing: 3px;
+  font-size: 11px;
+  letter-spacing: 2.5px;
 }
 
 .hero h1 {
-  max-width: 800px;
+  max-width: 680px;
   margin: 0;
+
   color: #f5f1e7;
-  font-size: clamp(48px, 7vw, 90px);
-  line-height: 0.98;
+  font-size: clamp(34px, 5.5vw, 52px);
+  line-height: 1;
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
 }
 
 .hero p {
-  max-width: 600px;
-  margin: 25px 0 35px;
-  color:
-    rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  line-height: 1.6;
+  max-width: 540px;
+  margin: 20px 0 28px;
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  line-height: 1.55;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .hero-buttons a {
-  padding: 15px 25px;
-  border-radius: 8px;
+  padding: 12px 21px;
 
+  border-radius: 7px;
   background: var(--gold-accent);
 
   color: #081b24;
-
+  font-size: 14px;
   font-weight: 700;
 
   transition: 0.3s;
@@ -136,39 +155,32 @@ a {
 
 .hero-buttons a:hover {
   background: var(--gold-hover);
-  color:rgb(240, 239, 239);
-  transform: translateY(-3px);
+  color: rgb(240, 239, 239);
+  transform: translateY(-2px);
 }
 
 .hero-buttons .secondary-btn {
-  background:
-    rgba(255, 255, 255, 0.08);
-
-  border:
-    1px solid rgba(255, 255, 255, 0.4);
-
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: white;
 }
 
 .hero-buttons .secondary-btn:hover {
   background: white;
-
   color: #081b24;
 }
-
 .intro {
   position: relative;
 
-  width: min(1000px, 90%);
+  width: min(900px, 88%);
+  margin: 0 auto;
 
-  margin: auto;
-
-  padding: 120px 0 100px;
+  padding: 85px 0 75px;
 
   text-align: center;
-
   overflow: hidden;
 }
+
 .intro > * {
   position: relative;
   z-index: 2;
@@ -176,113 +188,132 @@ a {
 
 .section-label {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
+
   color: rgb(180, 180, 180);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
 }
+
 .intro h2 {
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 
   color: #303a40;
-
-  font-size: clamp(32px, 5vw, 52px);
-
-  line-height: 1.1;
-
+  font-size: clamp(28px, 4.5vw, 43px);
+  line-height: 1.12;
   font-weight: 800;
 }
-.intro p {
-  max-width: 760px;
-  margin: 15px auto;
-  color: #6b6b6b;
-  font-size: 17px;
-  line-height: 1.8;
-}
 
+.intro p {
+  max-width: 700px;
+  margin: 12px auto;
+
+  color: #6b6b6b;
+  font-size: 15px;
+  line-height: 1.75;
+}
 .categories {
-  width: min(1200px, 92%);
-  margin: 0 auto 100px auto;
+  width: min(1100px, 90%);
+  margin: 0 auto 80px;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
 
 .category-card {
   position: relative;
-  min-height: 420px;
-  padding: 40px;
-  border-radius: 24px;
-  overflow: hidden;
-  display: flex;
 
+  min-height: 350px;
+  padding: 30px;
+
+  display: flex;
   align-items: flex-end;
+
+  overflow: hidden;
+  border-radius: 18px;
+
   background-size: cover;
   background-position: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
-              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
+
 .category-card.museum-card {
   background-image: url("/images.jpeg");
 }
 
 .category-card.statue-category-card {
-   background-image: url("/alaverdi.jpeg");
+  background-image: url("/alaverdi.jpeg");
 }
 
 .category-card::before {
   content: "";
+
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     180deg,
     rgba(15, 35, 27, 0.15) 0%,
     rgba(15, 35, 27, 0.7) 60%,
     rgba(15, 35, 27, 0.95) 100%
   );
-  transition: opacity 0.4s ease;
+
+  transition: opacity 0.35s ease;
 }
+
 .category-card > div {
   position: relative;
   z-index: 2;
+
   color: #ffffff;
-  transform: translateY(10px);
-  transition: transform 0.4s ease;
+
+  transform: translateY(7px);
+  transition: transform 0.35s ease;
 }
 
 .category-card h3 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 0 0 12px 0;
+  margin: 0 0 9px;
+
   color: #ffffff;
-  letter-spacing: -0.5px;
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
 }
 
 .category-card p {
-  font-size: 1.05rem;
-  line-height: 1.6;
+  max-width: 440px;
+  margin-bottom: 18px;
+
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 24px;
-  max-width: 480px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .category-card a {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1rem;
+  gap: 7px;
+
+  color: #e4c887;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: #e4c887; 
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .category-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(24, 56, 43, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(24, 56, 43, 0.22);
 }
 
 .category-card:hover::before {
@@ -300,84 +331,48 @@ a {
 
 .category-card:hover a {
   color: #ffffff;
-  transform: translateX(6px);
+  transform: translateX(5px);
 }
-
-
-@media (max-width: 600px) {
-  .categories {
-    margin-bottom: 60px;
-  }
-
-  .category-card {
-    min-height: 350px;
-    padding: 28px;
-    border-radius: 18px;
-  }
-
-  .category-card h3 {
-    font-size: 1.6rem;
-  }
-
-  .category-card p {
-    font-size: 0.95rem;
-    margin-bottom: 18px;
-  }
-}
-
-
 .featured {
-  padding: 110px 0;
-
+  padding: 85px 0;
   background: #0a2029;
 }
 
 .section-heading {
-  width: min(1200px, 90%);
-
-  margin: 0 auto 45px;
+  width: min(1100px, 90%);
+  margin: 0 auto 35px;
 }
 
 .featured-grid {
-  width: min(1200px, 90%);
-
-  margin: auto;
+  width: min(1100px, 90%);
+  margin: 0 auto;
 
   display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
-  gap: 25px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .heritage-card {
   overflow: hidden;
 
-  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
 
   background: #102b35;
-
-  border:
-    1px solid rgba(255, 255, 255, 0.08);
 
   transition: 0.3s;
 }
 
 .heritage-card:hover {
-  transform: translateY(-7px);
-
+  transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
-
-  border-color:
-    rgba(200, 178, 122, 0.25);
+  border-color: rgba(200, 178, 122, 0.25);
 }
 
 .heritage-image {
-  height: 260px;
+  height: 210px;
 
   background-size: cover;
-
   background-position: center;
 }
 
@@ -397,61 +392,52 @@ a {
 }
 
 .heritage-content {
-  padding: 25px;
+  padding: 20px;
 }
 
 .heritage-content > span {
   color: var(--gold-accent);
-
-  font-size: 12px;
-
+  font-size: 10px;
   font-weight: 800;
-
-  text-transform: uppercase;
-
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .heritage-content h3 {
-  margin: 10px 0;
+  margin: 8px 0;
 
   color: #f2f0e8;
-
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .heritage-content p {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   color: #aeb9b9;
-
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .heritage-content a {
   color: var(--gold-light);
-
+  font-size: 14px;
   font-weight: 700;
 }
-
 .about {
-  width: min(1200px, 90%);
+  width: min(1100px, 90%);
+  margin: 0 auto;
 
-  margin: auto;
-
-  padding: 110px 0;
+  padding: 85px 0;
 
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 70px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 55px;
 
   align-items: center;
 }
 
 .about-image {
-  min-height: 550px;
+  min-height: 440px;
 
   border-radius: var(--radius-lg);
 
@@ -463,33 +449,32 @@ a {
     url("/horses.jpg");
 
   background-size: cover;
-
   background-position: center;
 }
 
 .about-content p {
-  margin: 0 0 18px;
+  margin: 0 0 15px;
 
   color: #4d4e4e;
+  font-size: 15px;
+  line-height: 1.7;
+}
 
-  font-size: 16px;
-
-  line-height: 1.8;
+#titleB {
+  color: #252424e0;
 }
 
 .main-button {
   display: inline-block;
 
-  margin-top: 15px;
+  margin-top: 12px;
+  padding: 12px 21px;
 
-  padding: 14px 24px;
-
-  border-radius: 8px;
-
+  border-radius: 7px;
   background: var(--gold-accent);
 
   color: #081b24;
-
+  font-size: 14px;
   font-weight: 700;
 
   transition: 0.3s;
@@ -497,58 +482,52 @@ a {
 
 .main-button:hover {
   background: rgb(16, 18, 29);
- color : rgb(249, 248, 248);
-  transform: translateY(-3px);
+  color: rgb(249, 248, 248);
+  transform: translateY(-2px);
 }
 .stats {
-  padding: 90px 5%;
+  padding: 70px 5%;
 
   background: #061720;
-
   color: white;
 }
 
 .stats-title {
+  margin-bottom: 40px;
   text-align: center;
-
-  margin-bottom: 55px;
 }
 
 .stats-title > span {
   color: var(--gold-accent);
-
-  font-size: 13px;
-
+  font-size: 11px;
   font-weight: 800;
-
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 }
 
 .stats-title h2 {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
 
   color: #f2f0e8;
-
-  font-size: 42px;
+  font-size: 35px;
 }
 
 .stats-grid {
-  width: min(1300px, 100%);
-  margin: auto;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns:
-    repeat(5, 1fr);
-  border-top:
-    1px solid rgba(255, 255, 255, 0.15);
-  border-bottom:
-    1px solid rgba(255, 255, 255, 0.15);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .stat {
-  padding: 35px 20px;
+  padding: 28px 15px;
+
   text-align: center;
-  border-right:
-    1px solid rgba(255, 255, 255, 0.15);
+
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .stat:last-child {
@@ -557,22 +536,18 @@ a {
 
 .stat strong {
   display: block;
-
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 
   color: var(--gold-light);
-
-  font-size: 45px;
+  font-size: 38px;
 }
 
 .stat span {
-  color:
-    rgba(255, 255, 255, 0.7);
-
-  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
 }
 .cta {
-  padding: 120px 20px;
+  padding: 90px 20px;
 
   text-align: center;
 
@@ -584,69 +559,55 @@ a {
     url("horse2.jpg");
 
   background-size: cover;
-
   background-position: center;
 
   color: white;
 }
-#titleB{
-  color:#252424e0;
-}
 
 .cta > span {
   color: var(--gold-accent);
-
-  font-size: 13px;
-
+  font-size: 11px;
   font-weight: 800;
-
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 }
 
 .cta h2 {
-  margin: 15px 0;
+  margin: 12px 0;
 
   color: #f2f0e8;
-
-  font-size: clamp(38px, 6vw, 65px);
-
+  font-size: clamp(34px, 5vw, 52px);
   line-height: 1.05;
 }
 
 .cta p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
-  color:
-    rgba(255, 255, 255, 0.7);
-
-  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
 }
 
 .cta a {
   display: inline-block;
 
-  padding: 15px 28px;
+  padding: 12px 23px;
 
-  border-radius: 8px;
-
+  border-radius: 7px;
   background: var(--gold-accent);
 
   color: #081b24;
-
+  font-size: 14px;
   font-weight: 700;
 
   transition: 0.3s;
 }
 
 .cta a:hover {
-  background:rgba(45, 45, 45, 0.586);
-  color:rgb(240, 240, 240);
-  transform: translateY(-3px);
+  background: rgba(45, 45, 45, 0.586);
+  color: rgb(240, 240, 240);
+  transform: translateY(-2px);
 }
-
-
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -655,60 +616,58 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: #29434c;
-
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gold-accent);
 }
-
-
 @media (max-width: 900px) {
-
   .hero {
-    min-height: 600px;
+    min-height: 520px;
+  }
+
+  .hero-content {
+    width: 88%;
   }
 
   .categories {
     grid-template-columns: 1fr;
   }
 
+  .category-card {
+    min-height: 330px;
+  }
+
   .featured-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .about {
     grid-template-columns: 1fr;
-
-    gap: 40px;
+    gap: 35px;
   }
 
   .about-image {
-    min-height: 450px;
+    min-height: 400px;
   }
 
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .stat:nth-child(2) {
+  .stat:nth-child(2n) {
     border-right: none;
   }
 
   .stat:nth-child(-n + 2) {
-    border-bottom:
-      1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 }
+
 @media (max-width: 600px) {
-
-  .page-container {
-    padding: 2.5rem 1rem;
-  }
-
   .hero {
-    min-height: 600px;
+    min-height: 500px;
   }
 
   .hero-content {
@@ -716,97 +675,155 @@ a {
   }
 
   .hero h1 {
-    font-size: 48px;
-
+    font-size: clamp(32px, 9vw, 42px);
     letter-spacing: -1px;
   }
 
   .hero p {
-    font-size: 16px;
+    max-width: 450px;
+    margin: 17px 0 25px;
+    font-size: 15px;
   }
 
   .hero-buttons {
     flex-direction: column;
-
     align-items: stretch;
+    max-width: 300px;
   }
 
   .hero-buttons a {
     width: 100%;
-
+    padding: 11px 18px;
     text-align: center;
   }
 
   .intro {
-    padding: 75px 0;
+    width: 90%;
+    padding: 65px 0;
   }
 
   .intro h2,
   .section-heading h2,
   .about h2 {
-    font-size: 35px;
+    font-size: 31px;
+  }
+
+  .intro p {
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   .categories {
-    width: 92%;
-
-    margin-bottom: 70px;
+    width: 90%;
+    margin-bottom: 60px;
+    gap: 18px;
   }
 
   .category-card {
-    min-height: 330px;
-
-    padding: 30px;
+    min-height: 300px;
+    padding: 25px;
+    border-radius: 16px;
   }
 
+  .category-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .category-card p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  .category-card a {
+    font-size: 0.85rem;
+  }
 
   .featured {
-    padding: 75px 0;
+    padding: 65px 0;
+  }
+
+  .section-heading,
+  .featured-grid {
+    width: 90%;
   }
 
   .featured-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .heritage-image {
-    height: 230px;
+    height: 200px;
+  }
+
+  .heritage-content {
+    padding: 18px;
+  }
+
+  .heritage-content h3 {
+    font-size: 19px;
+  }
+
+  .heritage-content p {
+    font-size: 13px;
   }
 
   .about {
-    width: 92%;
-
-    padding: 75px 0;
+    width: 90%;
+    padding: 65px 0;
+    gap: 30px;
   }
 
   .about-image {
-    min-height: 350px;
+    min-height: 320px;
+  }
+
+  .about-content p {
+    font-size: 14px;
   }
 
   .stats {
-    padding: 70px 20px;
+    padding: 60px 18px;
+  }
+
+  .stats-title {
+    margin-bottom: 35px;
   }
 
   .stats-title h2 {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .stat {
-    padding: 25px 10px;
+    padding: 22px 8px;
   }
 
   .stat strong {
-    font-size: 35px;
+    font-size: 31px;
   }
 
   .stat span {
-    font-size: 13px;
+    font-size: 12px;
   }
+
   .cta {
-    padding: 85px 20px;
+    padding: 70px 18px;
+  }
+
+  .cta h2 {
+    font-size: clamp(32px, 9vw, 43px);
+  }
+
+  .cta p {
+    font-size: 14px;
+  }
+
+  .cta a {
+    padding: 11px 20px;
   }
 
   .details-body {
@@ -815,7 +832,6 @@ a {
 
   .details-header-group {
     flex-direction: column;
-
     align-items: flex-start;
   }
 
@@ -830,11 +846,62 @@ a {
 
   .pagination {
     gap: 0.7rem;
-
     flex-wrap: wrap;
   }
 
   .btn-page {
     padding: 10px 18px;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    min-height: 470px;
+  }
+
+  .hero h1 {
+    font-size: 31px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    max-width: 270px;
+  }
+
+  .intro h2,
+  .section-heading h2,
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .category-card {
+    min-height: 285px;
+    padding: 22px;
+  }
+
+  .category-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .heritage-image {
+    height: 190px;
+  }
+
+  .stats {
+    padding: 55px 14px;
+  }
+
+  .stat strong {
+    font-size: 28px;
+  }
+
+  .stat span {
+    font-size: 11px;
+  }
+
+  .cta {
+    padding: 60px 16px;
   }
 }

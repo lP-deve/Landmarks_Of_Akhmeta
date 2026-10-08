@@ -7,7 +7,7 @@ function Home() {
       <section className="hero">
         <div className="hero-overlay">
           <div className="hero-content">
-            <span>AKHMETA INFO</span>
+            <span>AKHMETA</span>
 
             <h1>
               აღმოაჩინე
@@ -169,8 +169,8 @@ function Home() {
      
       <section className="stats">
         <div className="stats-title">
-          <span>AKHMETA INFO</span>
-          <h2>ახმეტა რიცხვებში</h2>
+          <span>AKHMETA</span>
+          <h2>ზოგადი ინფორმაცია</h2>
         </div>
 
         <div className="stats-grid">
@@ -189,14 +189,7 @@ function Home() {
             <span>კმ² ტერიტორია</span>
           </div>
 
-          <div className="stat">
-            <strong>1</strong>
-            <span>უნიკალური თუშეთი</span>
-          </div>
-          <div className="stat">
-            <strong>1</strong>
-            <span>ისტორიული პანკისის ხეობა</span>
-          </div>
+        
         </div>
       </section>
 
