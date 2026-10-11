@@ -169,59 +169,13 @@ body {
   margin: 48px auto 32px;
 
   display: flex;
-
+  
   align-items: center;
   justify-content: space-between;
 
   gap: 20px;
 }
 
-.museum-search {
-  width: 350px;
-  height: 46px;
-
-  display: flex;
-  align-items: center;
-
-  gap: 10px;
-
-  padding: 0 15px;
-
-  background: var(--white);
-
-  border: 1px solid var(--border);
-
-  border-radius: 9px;
-
-  box-shadow: 0 5px 18px rgba(30, 45, 35, 0.04);
-
-  transition: 0.25s ease;
-}
-
-.museum-search:focus-within {
-  border-color: var(--forest-light);
-
-  box-shadow:
-    0 0 0 3px rgba(40, 85, 65, 0.08);
-}
-
-.museum-search input {
-  width: 100%;
-  height: 100%;
-
-  border: 0;
-  outline: 0;
-
-  background: transparent;
-
-  color: var(--text);
-
-  font-size: 13px;
-}
-
-.museum-search input::placeholder {
-  color: #9a9e99;
-}
 
 .museum-filters {
   display: flex;

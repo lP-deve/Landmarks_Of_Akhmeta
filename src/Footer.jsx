@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-container">
         
-        {/* Brand Column */}
+        
         <div className="footer-column brand-col">
           <div className="footer-logo">
             <FaCompass className="logo-icon" />
@@ -24,11 +24,11 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Contact Column */}
+       
         <div className="footer-column contact-col">
           <h4>კონტაქტი & რეგიონი</h4>
           
-          {/* Google Maps Link */}
+          
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
             <a 
@@ -41,7 +41,7 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Email Click-to-Send */}
+        
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
             <a 
@@ -52,7 +52,6 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Phone Click-to-Call */}
           <div className="contact-item">
             <FaPhoneAlt className="contact-icon" />
             <a 
@@ -64,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Navigation Column */}
+     
         <div className="footer-column nav-col">
           <h4>ნავიგაცია</h4>
           <ul className="footer-links">
@@ -76,7 +75,6 @@ const Footer = () => {
 
       </div>
 
-      {/* Footer Bottom */}
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p>

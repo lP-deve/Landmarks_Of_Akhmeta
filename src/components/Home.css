@@ -379,7 +379,7 @@ img {
 
 .kvetera {
   background-image:
-    url("https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Kvetera1.jpg/500px-Kvetera1.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail");
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbdnA9t7YXNg6Qjzd8XfzlZOCEDcCtrUK62h3bR7MYQ7jju5-zolWd5kQ&s=10");
 }
 
 .alaverdi {
@@ -840,11 +840,11 @@ img {
   }
 
   .stat strong {
-    font-size: 24px; /* პატარა ეკრანზე ციფრების ზომა ოდნავ პატარავდება */
+    font-size: 24px; 
   }
 
   .stat span {
-    font-size: 11px; /* ტექსტის ზომა პატარავდება, რომ 3 სვეტში ჩატიოს */
+    font-size: 11px; 
   }
   .cta {
     padding: 70px 18px;

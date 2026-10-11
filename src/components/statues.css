@@ -105,43 +105,67 @@ body {
   width: min(1180px, 92%);
   margin: 0 auto;
   padding: 0 0 70px;
+  margin-top: 30px;
+
 }
 
 .search-wrapper {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
+  align-items: start;
+  justify-content: start;
   width: 100%;
-  margin-bottom: 30px;
+  max-width: 400px; 
+  
 }
+
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  color: #94a3b8; 
+  font-size: 1.1rem;
+  pointer-events: none; 
+  transition: color 0.3s ease;
+    bottom: 14px
+  
+}
+
 
 .search-input {
   width: 100%;
-  max-width: 350px;
-  padding: 11px 18px;
-  font-size: 0.9rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 25px;
-  background-color: #ffffff;
-  color: var(--text-main);
+  padding: 12px 16px 12px 48px; 
+  background-color: #0f172a; 
+  color: #121111;
+  border: 1px solid rgba(212, 175, 55, 0.3); 
+  border-radius: 8px;
+  font-size: 1rem;
   outline: none;
-  transition: var(--transition);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-}
+  transition: all 0.3s ease;
 
-.search-input:focus {
-  border-color: var(--accent-dark);
-  box-shadow: 0 4px 12px rgba(27, 48, 34, 0.12);
+
 }
 
 .search-input::placeholder {
-  color: #a0aec0;
+  color: #64748b;
 }
 
+
+.search-input:focus {
+  border-color: #d4af37; 
+  background-color: white;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.search-wrapper:focus-within .search-icon {
+  color: #d4af37; 
+}
 .statues-grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  margin-top: 28px;
 }
 
 .statue-card {
@@ -164,7 +188,6 @@ body {
   border:1px solid rgba(176, 158, 110, 0.512);
 }
 
-/* Updated for dynamic photo aspect ratio & framing */
 .card-image-wrapper {
   position: relative;
   width: 100%;
@@ -466,16 +489,6 @@ body {
     padding-bottom: 55px;
   }
 
-  .search-wrapper {
-    margin-bottom: 22px;
-  }
-
-  .search-input {
-    max-width: 100%;
-    padding: 10px 16px;
-    font-size: 0.88rem;
-  }
-
   .statues-grid {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -484,6 +497,7 @@ body {
   .statue-card {
     border-radius: 12px;
   }
+  
 
   .card-content {
     padding: 17px;

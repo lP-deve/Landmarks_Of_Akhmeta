@@ -9,7 +9,6 @@
   --transition-speed: 0.3s;
 }
 
-/* Header Wrapper */
 .header {
   position: sticky;
   top: 0;
@@ -26,7 +25,6 @@
   transition: all var(--transition-speed) ease;
 }
 
-/* Logo Block */
 .header .logo {
   display: flex;
   align-items: center;
@@ -46,7 +44,6 @@
   transform: scale(1.05);
 }
 
-/* Logo Text - Stylized like Nav Items */
 .logo p {
   color: var(--gold-accent);
   font-size: 1.05rem;
@@ -79,8 +76,6 @@
 .header .logo:hover p::after {
   width: 100%;
 }
-
-/* Navigation Menu */
 .header nav ul {
   display: flex;
   align-items: center;
@@ -125,7 +120,6 @@
   width: 100%;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
    .logo p{
     display: none;

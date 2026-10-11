@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { statues } from '../json';
 import './statues.css';
+import { FaSearch } from 'react-icons/fa';
 
 const ITEMS_PER_BATCH = 9;
 const FALLBACK_IMAGE = 'https://www.pinterest.com/pin/249527635599756601/';
@@ -65,7 +66,9 @@ function Statues() {
       </header>
 
       <div className="content-wrappers">
+
         <div className="search-wrapper">
+          <FaSearch className="search-icon" />
           <input
             type="text"
             className="search-input"
@@ -73,6 +76,7 @@ function Statues() {
             value={searchTerm}
             onChange={handleSearch}
           />
+          
         </div>
 
         <div className="statues-grid">

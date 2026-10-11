@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Museums.css";
 import { museums } from "../json";
+import { FaSearch } from 'react-icons/fa';
 
 function Museums() {
   const [filter, setFilter] = useState("ყველა");
@@ -36,10 +37,11 @@ function Museums() {
 
       <section className="museum-controls">
 
-        <div className="museum-search">
-        
+        <div className="search-wrapper">
+        <FaSearch className="search-icon" />
           <input
             type="text"
+            className="search-input"
             placeholder="მოძებნე მუზეუმი..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
