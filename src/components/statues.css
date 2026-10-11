@@ -50,10 +50,10 @@ body {
   height: 500px;
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.41),
-      rgba(0, 0, 0, 0.447)
+      rgba(0, 0, 0, 0.547),
+      rgba(0, 0, 0, 0.326)
     ),
-    url("https://i.pinimg.com/736x/5d/e9/31/5de93152928bc2b5cce8618875ebfc3e.jpg");
+    url("/bg.jpeg");
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -62,10 +62,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-}
-
-.hero-container {
-
 }
 
 .main-header .bg {

@@ -247,9 +247,9 @@ img {
 }
 
 .category-card.museum-card {
-  background-image: url("https://i.pinimg.com/736x/07/a9/44/07a9448b91a611bbf54b8b80e32a18e7.jpg");
+  background-image: url("https://i.pinimg.com/736x/fe/5f/11/fe5f112a140492854cc136ff258ecb9b.jpg");
   background-repeat:no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 
 .category-card.statue-category-card {
@@ -693,6 +693,9 @@ img {
   #hide{
     display: block;
   }
+  .stat{
+    border-right: none;
+  }
 
   .hero {
     min-height: 500px;
@@ -832,7 +835,7 @@ img {
 
   .stat {
     padding: 18px 5px;
-    border:1px solid grey !important;
+   
     
   }
 
@@ -891,7 +894,9 @@ img {
   .hero {
     min-height: 470px;
   }
-
+.stat{
+    border-right: none !important;
+  }
   .hero h1 {
     font-size: 31px;
   }

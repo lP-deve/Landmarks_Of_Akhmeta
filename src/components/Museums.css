@@ -266,8 +266,7 @@ body {
 
   color: var(--gold-accent);
 
-  box-shadow:
-    0 5px 13px rgba(23, 55, 43, 0.18);
+ 
 }
 .museum-grid {
   width: min(1100px, 90%);
@@ -285,9 +284,7 @@ body {
 }
 .museum-card {
   position: relative;
-
   width: 100%;
-
   overflow: hidden;
 
   background: var(--white);
