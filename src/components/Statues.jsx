@@ -1,26 +1,19 @@
-import { useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { statues } from '../json';
 import './statues.css';
 
-const ITEMS_PER_PAGE = 9;
-const FALLBACK_IMAGE =
-  'https://www.pinterest.com/pin/249527635599756601/';
+const ITEMS_PER_BATCH = 9;
+const FALLBACK_IMAGE = 'https://www.pinterest.com/pin/249527635599756601/';
 
 function Statues() {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  const initialPage = Math.max(
-    parseInt(searchParams.get('page'), 10) || 1,
-    1
-  );
-
-  const [currentPage, setCurrentPage] = useState(initialPage);
   const [searchTerm, setSearchTerm] = useState('');
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_BATCH);
+  const observerTarget = useRef(null);
+
 
   const filteredStatues = statues.filter((item) => {
     const search = searchTerm.toLowerCase().trim();
-
     if (!search) return true;
 
     return (
@@ -29,62 +22,48 @@ function Statues() {
       item['რელიგიური თუ საერო']?.toLowerCase().includes(search)
     );
   });
+  const visibleItems = filteredStatues.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredStatues.length;
+  const loadMore = useCallback(() => {
+    if (hasMore) {
+      setVisibleCount((prevCount) => prevCount + ITEMS_PER_BATCH);
+    }
+  }, [hasMore]);
 
-  const totalPages = Math.ceil(
-    filteredStatues.length / ITEMS_PER_PAGE
-  );
-  const validPage =
-    totalPages > 0
-      ? Math.min(currentPage, totalPages)
-      : 1;
+  useEffect(() => {
+    const element = observerTarget.current;
+    if (!element) return;
 
-  const startIndex = (validPage - 1) * ITEMS_PER_PAGE;
-
-  const currentItems = filteredStatues.slice(
-    startIndex,
-    startIndex + ITEMS_PER_PAGE
-  );
-
-  const changePage = (page) => {
-    const newPage = Math.max(
-      1,
-      Math.min(page, totalPages)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          loadMore();
+        }
+      },
+      { threshold: 0.1, rootMargin: '100px' }
     );
 
-    setCurrentPage(newPage);
+    observer.observe(element);
 
-    setSearchParams({
-      page: String(newPage),
-    });
-
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
+    return () => {
+      if (element) observer.unobserve(element);
+    };
+  }, [loadMore]);
   const handleSearch = (e) => {
-    const value = e.target.value;
-
-    setSearchTerm(value);
-    setCurrentPage(1);
-
-    setSearchParams({
-      page: '1',
-    });
+    setSearchTerm(e.target.value);
+    setVisibleCount(ITEMS_PER_BATCH);
   };
 
   return (
-    <>
-    
     <div className="page-container">
-        <header className="main-header">
+      <header className="main-header">
         <div className="bg">
+          <p>Akhmeta</p>
           <h1>კულტურული მემკვიდრეობის ძეგლები</h1>
           <p>ახმეტის მუნიციპალიტეტის ისტორიული ობიექტები</p>
         </div>
-        </header>
-        
+      </header>
+
       <div className="content-wrappers">
         <div className="search-wrapper">
           <input
@@ -97,17 +76,16 @@ function Statues() {
         </div>
 
         <div className="statues-grid">
-          {currentItems.map((item) => {
+          {visibleItems.map((item) => {
             const image =
-              typeof item.ფოტო === 'string' &&
-              item.ფოტო.trim() !== ''
+              typeof item.ფოტო === 'string' && item.ფოტო.trim() !== ''
                 ? item.ფოტო
                 : FALLBACK_IMAGE;
 
             return (
               <Link
                 key={item.N}
-                to={`/statues/${item.N}?page=${validPage}`}
+                to={`/statues/${item.N}`}
                 className="statue-card"
               >
                 <div className="card-image-wrapper">
@@ -123,15 +101,9 @@ function Statues() {
                     }}
                   />
 
-                  {item[
-                    'მუნიციპალური თუ ეროვნული მნიშვნელობის'
-                  ] && (
+                  {item['მუნიციპალური თუ ეროვნული მნიშვნელობის'] && (
                     <span className="card-badge">
-                      {
-                        item[
-                          'მუნიციპალური თუ ეროვნული მნიშვნელობის'
-                        ]
-                      }
+                      {item['მუნიციპალური თუ ეროვნული მნიშვნელობის']}
                     </span>
                   )}
                 </div>
@@ -144,7 +116,6 @@ function Statues() {
                     </h2>
 
                     <p className="card-address">
-                      {' '}
                       {item['ფაქტიური მისამართი'] ||
                         'მისამართი მითითებული არ არის'}
                     </p>
@@ -152,13 +123,10 @@ function Statues() {
 
                   <div className="card-footer">
                     <span>
-                      {item['რელიგიური თუ საერო'] ||
-                        'ინფორმაცია არ არის'}
+                      {item['რელიგიური თუ საერო'] || 'ინფორმაცია არ არის'}
                     </span>
 
-                    <span className="link-arrow">
-                      ვრცლად →
-                    </span>
+                    <span className="link-arrow">ვრცლად</span>
                   </div>
                 </div>
               </Link>
@@ -166,40 +134,24 @@ function Statues() {
           })}
         </div>
 
-        {currentItems.length === 0 && (
+        {filteredStatues.length === 0 && (
           <div className="no-results">
             <h2>ძეგლი ვერ მოიძებნა</h2>
             <p>სცადე სხვა საძიებო სიტყვა.</p>
           </div>
         )}
 
-        {totalPages > 1 && (
-          <div className="pagination">
-            <button
-              type="button"
-              className="btn-page"
-              onClick={() => changePage(validPage - 1)}
-              disabled={validPage === 1}
-            >
-              წინა
-            </button>
-
-            <span className="page-indicator">
-              გვერდი {validPage} / {totalPages}
-            </span>
-
-            <button
-              type="button"
-              className="btn-page"
-              onClick={() => changePage(validPage + 1)}
-              disabled={validPage === totalPages}
-            >
-              შემდეგი
-            </button>
+       
+        {hasMore && (
+          <div
+            ref={observerTarget}
+            style={{ height: '40px', margin: '20px 0', textAlign: 'center' }}
+          >
+            <p className="loading-text">იტვირთება...</p>
           </div>
         )}
       </div>
-    </div></>
+    </div>
   );
 }
 

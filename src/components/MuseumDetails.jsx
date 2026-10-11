@@ -11,7 +11,7 @@ function MuseumDetails() {
     return (
       <main className="museum-not-found">
         <h1>მუზეუმი ვერ მოიძებნა</h1>
-        <Link to="/museums" >← მუზეუმებზე დაბრუნება</Link>
+        <Link to="/museums" >მუზეუმებზე დაბრუნება</Link>
       </main>
     );
   }
@@ -19,7 +19,7 @@ function MuseumDetails() {
   return (
     <main className="museum-details" >
       <div className="details-container">
-         <Link to="/museums" className="back">← მუზეუმებზე დაბრუნება</Link>
+         <Link to="/museums" className="back">მუზეუმებზე დაბრუნება</Link>
         <section className="details-hero">
           <img 
             src={museum.image} 

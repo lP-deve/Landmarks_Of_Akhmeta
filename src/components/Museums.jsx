@@ -23,7 +23,7 @@ function Museums() {
 
       <section className="museums-header">
         <div className="bg">
-        <span>AKHMETA INFO</span>
+        <span>AKHMETA</span>
 
         <h1>მუზეუმები</h1>
 
@@ -114,7 +114,7 @@ function Museums() {
 
 
                 <div className="view-details">
-                  დეტალურად ნახვა →
+                  დეტალურად ნახვა 
                 </div>
 
               </div>

@@ -64,7 +64,7 @@ function Home() {
               უნიკალურ კოლექციებს.
             </p>
 
-            <Link to="/museums">მუზეუმების ნახვა →</Link>
+            <Link to="/museums">მუზეუმების ნახვა </Link>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ function Home() {
               კულტურული ძეგლები.
             </p>
 
-            <Link to="/statues">ძეგლების ნახვა →</Link>
+            <Link to="/statues">ძეგლების ნახვა </Link>
           </div>
         </div>
       </section>
@@ -92,7 +92,7 @@ function Home() {
         </div>
 
         <div className="featured-grid">
-          <article className="heritage-card">
+          <article className="heritage-card" id="hide">
             <div className="heritage-image kvetera" role="img" aria-label="ქვეტერას ციხე-ქალაქი"></div>
 
             <div className="heritage-content">
@@ -102,7 +102,7 @@ function Home() {
                 შუა საუკუნეების მნიშვნელოვანი ციხე-ქალაქი, რომელიც ახმეტის
                 მუნიციპალიტეტის ერთ-ერთი გამორჩეული ისტორიული ძეგლია.
               </p>
-              <Link to="/statues">გაიგე მეტი →</Link>
+              <Link to="/statues">გაიგე მეტი </Link>
             </div>
           </article>
 
@@ -116,11 +116,11 @@ function Home() {
                 ალაზნის ველზე მდებარე ერთ-ერთი უმნიშვნელოვანესი ქართული
                 საეკლესიო და კულტურული ძეგლი.
               </p>
-              <Link to="/statues">გაიგე მეტი →</Link>
+              <Link to="/statues">გაიგე მეტი </Link>
             </div>
           </article>
 
-          <article className="heritage-card">
+          <article className="heritage-card" >
             <div className="heritage-image tusheti" role="img" aria-label="თუშეთი"></div>
 
             <div className="heritage-content">
@@ -130,7 +130,7 @@ function Home() {
                 უნიკალური მთიანი რეგიონი, რომელიც ცნობილია ტრადიციული
                 სოფლებით, კოშკებითა და კულტურული მემკვიდრეობით.
               </p>
-              <Link to="/statues">გაიგე მეტი →</Link>
+              <Link to="/statues">გაიგე მეტი </Link>
             </div>
           </article>
         </div>
@@ -205,7 +205,7 @@ function Home() {
 
         <p>მოძებნე მუზეუმები, ძეგლები და ისტორიული ადგილები.</p>
 
-        <Link to="/museums">დაიწყე აღმოჩენა →</Link>
+        <Link to="/museums">დაიწყე აღმოჩენა </Link>
       </section>
     </main>
   );

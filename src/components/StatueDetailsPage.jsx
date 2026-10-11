@@ -31,7 +31,7 @@ function StatueDetailsPage() {
             to={`/statues?page=${page}`}
             className="btn-back"
           >
-            ← უკან დაბრუნება
+             უკან დაბრუნება
           </Link>
         </div>
       </div>
@@ -55,7 +55,7 @@ function StatueDetailsPage() {
           to={`/statues?page=${page}`}
           className="btn-back"
         >
-          ← სიასთან დაბრუნება
+           სიასთან დაბრუნება
         </Link>
 
         <div className="details-card">

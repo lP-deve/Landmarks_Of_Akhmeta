@@ -6,6 +6,8 @@ function Header() {
     <header className="header">
       <Link to="/" className="logo">
         <img src="/logo.jpg" alt="Akhmeta Info" />
+
+        <p>ახმეტის მუნიციპალიტეტი</p>
       </Link>
 
       <nav>
