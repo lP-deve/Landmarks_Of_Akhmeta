@@ -1095,7 +1095,7 @@ export const statues = [
       "ღია თუ დახურული": null,
       "რელიგიური თუ საერო": "საერო",
       "კომენტარი": null,
-      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/200883361_2887549451468286_6752541350609931981_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1943&ctp=p526x296&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEF_r-WYDENEAsbi-znWh_lZT9q7TNAbwVlP2rtM0BvBZEKvyJX6zTjdcyfwzDNV8lL7VALU8fOJY72am0k3Mbq&_nc_ohc=JA95q4l6VB4Q7kNvwGhVxBF&_nc_oc=Adoe6mCFnakAl7DBX3lXCEzof2CgLRiwjucBbYLoHwJwCuG9IWCENd_LT3bI6juNJDM&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Z1y-rfLizhCHdYjH_g_ouA&_nc_ss=7b2a8&oh=00_AQOkSDBCXiSIOwuoPiWzT0oH_IEIJXGIY-1dBXslsV_XzA&oe=6AFDD362", 
+      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/200883361_2887549451468286_6752541350609931981_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1943&ctp=p526x296&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEF_r-WYDENEAsbi-znWh_lZT9q7TNAbwVlP2rtM0BvBZEKvyJX6zTjdcyfwzDNV8lL7VALU8fOJY72am0k3Mbq&_nc_ohc=JA95q4l6VB4Q7kNvwGhVxBF&_nc_oc=Adoe6mCFnakAl7DBX3lXCEzof2CgLRiwjucBbYLoHwJwCuG9IWCENd_LT3bI6juNJDM&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Qupij2_zV8v5CIsd2UwuUQ&_nc_ss=7b2a8&oh=00_AQO8DwEEu4CCBbCQqPGtlV4dK-8fag3luiezP0Xbhkgvkw&oe=6AFDD362", 
       "ისტორია": "ფარსმა არის ნასოფლარი ახმეტის მუნიციპალიტეტში, ისტორიულ თუშეთში, პირიქითა (აღმა) თემში, ზღვის დონიდან 2075 მეტრზე. ის გამორჩეულია თავისი მონუმენტური არქიტექტურითა და თუშეთში ზომით ყველაზე დიდი კოშკებით ფარსმას კოშკები და ციხე-სახლები მიეკუთვნება ეროვნული მნიშვნელობის კულტურული მემკვიდრეობის ძეგლებს. ისინი საუკუნეების განმავლობაში იცავდნენ პირიქითა თემს გარეშე მტრის თავდასხმებისგან."
     },
     {
@@ -1338,7 +1338,7 @@ export const statues = [
     },
     {
       "N": 92,
-      "დასახელება": "ჭონტიოს ციხე სახლები",
+      "დასახელება": "ჭონთიოს ციხე სახლები",
       "ფაქტიური მისამართი": "ნასოფლარი ჭონთიო",
       "მუნიციპალური თუ ეროვნული მნიშვნელობის": "ეროვნული",
       "ხელმძღვანელის სახელი/გვარი - ასეთის არსებობის შემთხვევაში": null,
@@ -1347,7 +1347,7 @@ export const statues = [
       "ღია თუ დახურული": null,
       "რელიგიური თუ საერო": "საერო",
       "კომენტარი": null,
-      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/57504487_1074165859437378_9158329846693101568_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGPXtMk99Fwi6c_amek3cxbsuF62MCDtHuy4XrYwIO0e6ypXpCV2VzXVlocr34V-QxiR5tMybrVBowroiDYnnWP&_nc_ohc=6PvgLpdRD0IQ7kNvwFjSj7A&_nc_oc=AdpKmWRBKWS4rDmryex_hY-4SFfCS5CzzZ0FSd4uefeQ6z9vcLhwhMBYphiSTmD0Ue4&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=HxUl_vuIgyVe8d24hJ2Y-Q&_nc_ss=7b2a8&oh=00_AQMIsUjuGsYWfd_F34kQFGBXPpn44oAMDTe0hmZ7RUG_fA&oe=6AFDD470", 
+      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/57425265_1074165869437377_6621062824066023424_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHJIwBIKuBE2E6M_zatWQ0JsUnm5fofAO2xSebl-h8A7a0PdooVAA-3U7m98wstJ9d0jhc4vGcOQJEy75YIW6oX&_nc_ohc=NHWuvsI2IMgQ7kNvwGJ_a3e&_nc_oc=Ado_ETlRSOD7sxpZNEu4TYgjv9CJrrtm9NpItxMLEbLKsfYKZbE9yUI8ScZfuWjnWv0&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=PtEzZwtrjp6SVkO48g0XTA&_nc_ss=7b2a8&oh=00_AQP0NyZNK3Rh2mY849QFTsu7THQau0hKewvRL1oLUJRdGA&oe=6AFDB628", 
       "ისტორია": "ციხე-სახლი აგებულია XVIII საუკუნეში და მდებარეობს ნასოფლარის ჩრდილო-დასავლეთ განაპირას."
     },
     {
@@ -1713,7 +1713,7 @@ export const statues = [
       "ღია თუ დახურული": null,
       "რელიგიური თუ საერო": "საერო",
       "კომენტარი": null,
-      "ფოტო": "https://about.ge/storage/pois/girevi-sezonuri-sofeli-461_mth.jpg", 
+      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/57504487_1074165859437378_9158329846693101568_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGPXtMk99Fwi6c_amek3cxbsuF62MCDtHuy4XrYwIO0e6ypXpCV2VzXVlocr34V-QxiR5tMybrVBowroiDYnnWP&_nc_ohc=6PvgLpdRD0IQ7kNvwFjSj7A&_nc_oc=AdpKmWRBKWS4rDmryex_hY-4SFfCS5CzzZ0FSd4uefeQ6z9vcLhwhMBYphiSTmD0Ue4&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=PtEzZwtrjp6SVkO48g0XTA&_nc_ss=7b2a8&oh=00_AQOGkL1Oohud9fvxGHz6x8o3o3C3vdQxAi3M82T6cvm5Rg&oe=6AFDD470", 
       "ისტორია": "ჭონთიო არის ისტორიული ნასოფლარი საქართველოში, ახმეტის მუნიციპალიტეტში, ისტორიულ მხარე თუშეთში (პირიქითა ანუ აღმა თემში), მდებარეობს თუშეთის დაცულ ტერიტორიებზე, ზღვის დონიდან 2190 მეტრ სიმაღლეზე, დაცარიელებამდე სოფელი ითვლიდა დაახლოებით 25 კომლს"
     },
     {
@@ -1741,7 +1741,7 @@ export const statues = [
       "ღია თუ დახურული": null,
       "რელიგიური თუ საერო": "საერო",
       "კომენტარი": null,
-      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9…iSIOwuoPiWzT0oH_IEIJXGIY-1dBXslsV_XzA&oe=6AFDD362", 
+      "ფოტო": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/200883361_2887549451468286_6752541350609931981_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1943&ctp=p526x296&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEF_r-WYDENEAsbi-znWh_lZT9q7TNAbwVlP2rtM0BvBZEKvyJX6zTjdcyfwzDNV8lL7VALU8fOJY72am0k3Mbq&_nc_ohc=JA95q4l6VB4Q7kNvwGhVxBF&_nc_oc=Adoe6mCFnakAl7DBX3lXCEzof2CgLRiwjucBbYLoHwJwCuG9IWCENd_LT3bI6juNJDM&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Qupij2_zV8v5CIsd2UwuUQ&_nc_ss=7b2a8&oh=00_AQO8DwEEu4CCBbCQqPGtlV4dK-8fag3luiezP0Xbhkgvkw&oe=6AFDD362", 
       "ისტორია": "ფარსმა — სოფელი ახმეტის მუნიციპალიტეტში, ისტორიული თუშეთის ტერიტორიაზე.[2] 2018 წლის 15 ივნისს, საქართველოს კულტურული მემკვიდრეობის დაცვის ეროვნული სააგენტოს გენერალური დირექტორის ბრძანებით ფარსმის კულტურული მემკვიდრეობის უძრავი ძეგლის სტატუსი მიენიჭა[3], ხოლო საქართველოს მთავრობის დადგენილებით 2018 წლის 10 ივლისიდან ეროვნული მნიშვნელობის კატეგორია განესაზღვრა"
     },
     {
