@@ -1713,7 +1713,7 @@ export const statues = [
       "ღია თუ დახურული": null,
       "რელიგიური თუ საერო": "საერო",
       "კომენტარი": null,
-      "ფოტო": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiI00tV1P3xuUJb_3HqbvIjtddlPu8_265eCG9p07HedRgsAHdFcLCYLg&s=10", 
+      "ფოტო": "https://about.ge/storage/pois/girevi-sezonuri-sofeli-461_mth.jpg", 
       "ისტორია": "ჭონთიო არის ისტორიული ნასოფლარი საქართველოში, ახმეტის მუნიციპალიტეტში, ისტორიულ მხარე თუშეთში (პირიქითა ანუ აღმა თემში), მდებარეობს თუშეთის დაცულ ტერიტორიებზე, ზღვის დონიდან 2190 მეტრ სიმაღლეზე, დაცარიელებამდე სოფელი ითვლიდა დაახლოებით 25 კომლს"
     },
     {
