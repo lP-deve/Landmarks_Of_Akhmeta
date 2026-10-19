@@ -11,21 +11,24 @@ function MuseumDetails() {
     return (
       <main className="museum-not-found">
         <h1>მუზეუმი ვერ მოიძებნა</h1>
-        <Link to="/museums" >მუზეუმებზე დაბრუნება</Link>
+        <Link to="/museums">მუზეუმებზე დაბრუნება</Link>
       </main>
     );
   }
 
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${museum.name}${museum.address}`
+  )}`;
+
   return (
-    <main className="museum-details" >
+    <main className="museum-details">
       <div className="details-container">
-         <Link to="/museums" className="back">მუზეუმებზე დაბრუნება</Link>
+        <Link to="/museums" className="back">მუზეუმებზე დაბრუნება</Link>
         <section className="details-hero">
           <img 
             src={museum.image} 
             alt={museum.name} 
             onError={(e) => {
-            
               e.currentTarget.onerror = null; 
               e.currentTarget.src = "https://via.placeholder.com/600x400?text=სურათი+ვერ+მოიძებნა";
             }}
@@ -37,7 +40,17 @@ function MuseumDetails() {
         <section className="info-cards-grid">
           <div className="info-card">
             <span className="card-label">მისამართი</span>
-            <span className="card-value">{museum.address}</span>
+            
+            <a 
+              href={googleMapsUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="card-value"
+              style={{ color: '#0066cc', textDecoration: 'underline', cursor: 'pointer' }}
+              title="ნახვა Google Maps-ში"
+            >
+              {museum.address} 
+            </a>
           </div>
 
           <div className="info-card">

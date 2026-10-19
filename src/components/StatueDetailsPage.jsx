@@ -31,7 +31,7 @@ function StatueDetailsPage() {
             to={`/statues?page=${page}`}
             className="btn-back"
           >
-             უკან დაბრუნება
+              უკან დაბრუნება
           </Link>
         </div>
       </div>
@@ -46,16 +46,22 @@ function StatueDetailsPage() {
     typeof item.ისტორია === 'string' &&
     item.ისტორია.trim() !== '';
 
+  const addressText = item['ფაქტიური მისამართი'];
+  const statueName = item['დასახელება']?.trim() || 'კულტურული მემკვიდრეობის ძეგლი';
+  
+  const googleMapsUrl = addressText
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${statueName}${addressText}`)}`
+    : null;
+
   return (
     <div className="page-container">
       <div className="details-wrapper">
 
-        
         <Link
           to={`/statues?page=${page}`}
           className="btn-back"
         >
-           სიასთან დაბრუნება
+            სიასთან დაბრუნება
         </Link>
 
         <div className="details-card">
@@ -63,10 +69,7 @@ function StatueDetailsPage() {
             <img
               loading="lazy"
               src={hasPhoto ? item.ფოტო : FALLBACK_IMAGE}
-              alt={
-                item.დასახელება?.trim() ||
-                'კულტურული მემკვიდრეობის ძეგლი'
-              }
+              alt={statueName}
               onError={(e) => {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = FALLBACK_IMAGE;
@@ -76,10 +79,7 @@ function StatueDetailsPage() {
 
           <div className="details-body">
             <div className="details-header-group">
-              <h1>
-                {item.დასახელება?.trim() ||
-                  'სახელი მითითებული არ არის'}
-              </h1>
+              <h1>{statueName}</h1>
 
               {item[
                 'მუნიციპალური თუ ეროვნული მნიშვნელობის'
@@ -102,8 +102,19 @@ function StatueDetailsPage() {
                 </span>
 
                 <span className="info-tile-value">
-                  {item['ფაქტიური მისამართი'] ||
-                    'მითითებული არ არის'}
+                  {addressText ? (
+                    <a
+                      href={googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: '#0066cc', textDecoration: 'underline', cursor: 'pointer' }}
+                      title="ნახვა Google Maps-ში"
+                    >
+                      {addressText}
+                    </a>
+                  ) : (
+                    'მითითებული არ არის'
+                  )}
                 </span>
               </div>
 
