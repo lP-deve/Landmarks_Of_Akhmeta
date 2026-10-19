@@ -213,14 +213,14 @@ function Home() {
   <h2>გვიპოვე რუკაზე</h2>
   <p>ახმეტის მუნიციპალიტეტი</p>
 
-  
-<iframe
-  src="https://maps.google.com/maps?q=Akhmeta+Municipality,+Georgia&output=embed"
-  title="ახმეტის მუნიციპალიტეტის რუკა"
-  loading="lazy"
-  allowFullScreen
-  referrerPolicy="no-referrer-when-downgrade"
-></iframe>
+<div className="div">
+  <iframe 
+    src="https://www.google.com/maps/d/u/0/embed?mid=14nnckl3xrhV91bPu7SzaOfbDvpAtBCw&ehbc=2E312F" 
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
 </section>
 
