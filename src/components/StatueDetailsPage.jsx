@@ -50,7 +50,7 @@ function StatueDetailsPage() {
   const statueName = item['დასახელება']?.trim() || 'კულტურული მემკვიდრეობის ძეგლი';
   
   const googleMapsUrl = addressText
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${statueName}${addressText}`)}`
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${addressText}`)}`
     : null;
 
   return (

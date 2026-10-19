@@ -519,7 +519,6 @@ img {
   font-size: 35px;
 }
 
-/* Base Grid Desktop */
 .stats-grid {
   width: min(1200px, 100%);
   margin: 0 auto;
