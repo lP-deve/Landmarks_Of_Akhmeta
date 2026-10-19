@@ -45,14 +45,22 @@ function StatueDetailsPage() {
   const hasHistory =
     typeof item.ისტორია === 'string' &&
     item.ისტორია.trim() !== '';
+const addressText = item['ფაქტიური მისამართი']?.trim() || '';
+const statueName = item['დასახელება']?.trim() || '';
 
-  const addressText = item['ფაქტიური მისამართი'];
-  const statueName = item['დასახელება']?.trim() || 'კულტურული მემკვიდრეობის ძეგლი';
-  
-  const googleMapsUrl = addressText
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${statueName}${addressText}`)}`
-    : null;
+const searchQuery = [
+  statueName,
+  addressText,
+  'Akhmeta Municipality',
+  'Kakheti',
+  'Georgia',
+]
+  .filter(Boolean)
+  .join(', ');
 
+const googleMapsUrl = searchQuery
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`
+  : null;
   return (
     <div className="page-container">
       <div className="details-wrapper">
@@ -102,20 +110,20 @@ function StatueDetailsPage() {
                 </span>
 
                 <span className="info-tile-value">
-                  {addressText ? (
-                    <a
-                      href={googleMapsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ color: '#0066cc', textDecoration: 'underline', cursor: 'pointer' }}
-                      title="ნახვა Google Maps-ში"
-                    >
-                      {addressText}
-                    </a>
-                  ) : (
-                    'მითითებული არ არის'
-                  )}
-                </span>
+               {googleMapsUrl ? (
+                <a
+                  href={googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="map-link"
+                  title="რუკაზე ნახვა"
+                >
+      {addressText || 'რუკაზე ნახვა'}
+    </a>
+  ) : (
+    'მითითებული არ არის'
+  )}
+</span>
               </div>
 
               <div className="info-tile">
