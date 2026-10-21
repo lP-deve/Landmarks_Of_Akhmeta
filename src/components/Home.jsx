@@ -210,7 +210,7 @@ function Home() {
 
       
 <section className="map-section">
-  <h2>გვიპოვე რუკაზე</h2>
+  <h2>იპოვე რუკაზე</h2>
   <p>ახმეტის მუნიციპალიტეტი</p>
 
 <div className="div">
