@@ -1,0 +1,1202 @@
+{
+  "header": {
+    "title": "Akhmeta Municipality",
+    "home": "Home",
+    "museums": "Museums",
+    "statues": "Monuments"
+  },
+
+  "home": {
+    "subtitle": "AKHMETA",
+    "hero_title_1": "Discover",
+    "hero_title_2": "Akhmeta Heritage",
+    "hero_desc": "History, culture, monuments, and museums in one space",
+    "view_museums": "View Museums",
+    "view_statues": "View Monuments",
+    "municipality_label": "Akhmeta Municipality",
+    "intro_title_1": "A Place Where History",
+    "intro_title_2": "Still Lives Today",
+    "intro_p1": "Akhmeta Municipality is one of Kakheti's most outstanding historical and cultural regions. Here, ancient history, Georgian architecture, mountain traditions, and unique nature meet.",
+    "intro_p2": "The municipality is home to important cultural monuments, museums, churches, monasteries, fortress towns, and the unique cultural landscape of Tusheti.",
+    "museums": "Museums",
+    "museums_desc": "Explore the museums in Akhmeta Municipality and their unique collections.",
+    "statues": "Monuments",
+    "statues_desc": "Discover historical churches, fortresses, monasteries, and other cultural monuments.",
+    "heritage_label": "Cultural Heritage",
+    "featured_places": "Featured Places",
+    "historical_monument": "Historical Monument",
+    "kvetera_title": "Kvetera Fortress-City",
+    "kvetera_desc": "An important medieval fortress-city and one of the most prominent historical monuments in Akhmeta Municipality.",
+    "learn_more": "Learn More",
+    "arch_monument": "Architectural Monument",
+    "alaverdi_title": "Alaverdi Monastery",
+    "alaverdi_desc": "One of the most important Georgian ecclesiastical and cultural monuments located in the Alazani Valley.",
+    "cultural_landscape": "Cultural Landscape",
+    "tusheti_title": "Tusheti",
+    "tusheti_desc": "A unique mountainous region known for its traditional villages, towers, and cultural heritage.",
+    "know_akheta": "Know Akhmeta",
+    "about_title_1": "History,",
+    "about_title_2": "Uniting Centuries",
+    "about_p1": "Traces of human life in the territory of Akhmeta date back to the Stone Age. The municipality's historical heritage includes architectural and archaeological monuments from various periods.",
+    "about_p2": "Particularly significant are Alaverdi, Kvetera, Matani Tskhrakara, Bakhtrioni Fortress, and the historical-cultural landscape of Tusheti.",
+    "discover_more": "Discover More",
+    "general_info": "General Information",
+    "stat_museums": "Museums",
+    "stat_cultural_obj": "Cultural Objects",
+    "stat_area": "km² Area",
+    "discover_akheta": "Discover Akhmeta",
+    "cta_title_1": "Your Journey",
+    "cta_title_2": "Starts Here",
+    "cta_desc": "Search for museums, monuments, and historical sites.",
+    "start_discovering": "Start Discovering",
+    "find_on_map": "Find on Map"
+  },
+
+  "footer": {
+    "title": "Sights of Akhmeta",
+    "desc": "Discover the rich history of Akhmeta Municipality, ancient fortresses, monasteries, and the breathtaking mountain landscapes of Tusheti.",
+    "contact_title": "Contact & Region",
+    "address": "Akhmeta Municipality, Kakheti, Georgia",
+    "nav_title": "Navigation",
+    "home": "Home",
+    "museums": "Museums",
+    "statues": "Monuments",
+    "rights_reserved": "All rights reserved."
+  },
+  "museums_page": {
+    "title": "Museums",
+    "subtitle": "Discover the museums of Akhmeta Municipality and their unique history.",
+    "search_placeholder": "Search museum...",
+    "filter_all": "All",
+    "filter_national": "National",
+    "filter_municipal": "Municipal",
+    "view_details": "View Details",
+    "no_results_title": "No Museum Found",
+    "no_results_desc": "Try a different search term or filter."
+  },
+  "museums_list": [
+    {
+      "id": "rafiel-eristavi",
+      "name": "R. Eristavi House-Museum",
+      "address": "Akhmeta, Kistauri Village",
+      "type": "National",
+      "manager": "Bela Pshavelashvili",
+      "phone": "591 010 157",
+      "halls": 4,
+      "price": "Free",
+      "event": "Annual Raphaeloba Festival, Night at the Museum",
+      "image": "/saxlmuzeumi.jpeg",
+      "history": "The Raphael Eristavi House-Museum in Kistauri was founded in 1951. Its exposition consists of 4 exhibition halls and a study. The museum houses 6,003 various scientific and auxiliary items reflecting the writer's life and work."
+    },
+    {
+      "id": "akhmeta-local",
+      "name": "Akhmeta Local Lore Museum",
+      "address": "Akhmeta, Kvemo Alvani Village",
+      "type": "Municipal",
+      "manager": "Lena Meltsaidze",
+      "phone": "597 122 880",
+      "halls": 6,
+      "price": "Free",
+      "event": "Tushetian Handcraft Days",
+      "service": "Traditional craft demonstration halls",
+      "image": "/მუზეუმი1.webp",
+      "history": "Akhmeta Local Lore Museum was founded in 1978. The museum collection contains over 17,000 exhibits, including ethnographic material, applied art pieces, carpets, traditional Tushetian clothing, and accessories."
+    },
+    {
+      "id": "duisi-ethnographic",
+      "name": "Ethnographic Museum",
+      "address": "Akhmeta, Duisi Village",
+      "type": "Municipal",
+      "manager": "Omar Khangoshvili",
+      "phone": "568 929 989",
+      "halls": 2,
+      "price": "Free",
+      "image": "/mus.jpeg",
+      "history": "The Ethnographic Museum of Duisi is located in the heart of the Pankisi Gorge. The museum presents approximately 800 exhibits covering periods from antiquity to the Middle Ages."
+    },
+    {
+      "id": "akhmeta-history",
+      "name": "History Museum",
+      "address": "Akhmeta, Cholokhashvili Street",
+      "type": "Municipal",
+      "manager": "Vacant",
+      "phone": null,
+      "halls": null,
+      "price": "Free",
+      "image": "/HistoryM.png",
+      "history": "The History Museum represents an important part of the historical and cultural heritage of Akhmeta Municipality."
+    }
+  ],
+ 
+  "museum_details": {
+    "not_found": "Museum Not Found",
+    "back_to_museums": "Back to Museums",
+    "image_not_found": "Image Not Found",
+    "view_on_maps": "View on Google Maps",
+    "address": "Address",
+    "type": "Type",
+    "manager": "Manager",
+    "phone": "Contact Number",
+    "not_specified": "Not Specified",
+    "history": "History"
+  
+},
+"statues_page": {
+    "subtitle": "Akhmeta",
+    "title": "Cultural Heritage Monuments",
+    "description": "Historical sites of Akhmeta Municipality",
+    "search_placeholder": "Search monument...",
+    "read_more": "Read More",
+    "not_found_title": "No Monument Found",
+    "not_found_desc": "Try a different search term.",
+    "loading": "Loading..."
+  },
+  "statues_list": [
+    {
+      "N": 2,
+      "name": "Alaverdi Complex",
+      "address": "Alaverdi Village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dji-0906-1-2.jpg",
+      "history": "Alaverdi — Cathedral and Monastery, located in the Kakheti region, Akhmeta Municipality, in the Alazani Valley near the village of Alaverdi, 20 km from Telavi. The cathedral is one of the largest ecclesiastical buildings in Georgia. Its height with the dome exceeds 50 meters. The complex includes: Alaverdi St. George Cathedral, wall, bell tower, palace, Peykar-Khan palace, wine cellar and bathhouse. Alaverdi Monastery was founded in the mid-6th century by Joseph of Alaverdi, one of the Assyrian Fathers."
+    },
+    {
+      "N": 1,
+      "name": "Kvetera Fortress-City",
+      "address": "Outskirts of Akhmeta, right bank of the Ilto River",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVrPOXlaJ6BeUBX33xO1EpkQyg_f7aZMzs5AtvypJAQ&s=10",
+      "history": "Kvetera is a historical fortress-city in Kakheti, Akhmeta Municipality. The complex includes: inner fortress, lower fortress, wall, palace, hall church, and the main landmark — the domed church. Since October 24, 2007, the Kvetera fortress-city has been included in the UNESCO World Heritage Tentative List."
+    },
+    {
+      "N": 3,
+      "name": "Lomisi St. George Church",
+      "address": "2.5 km south of Akhmeta",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-0348-37.jpg",
+      "history": "Lomisi St. George Church of Akhmeta is located in the Kakheti region, in the town of Akhmeta, 2.5 kilometers south in the forest. The church consists of three hall churches built side by side. The middle church dates back to the 10th-11th centuries, while the southern and northern churches were added later in the 14th-15th centuries."
+    },
+    {
+      "N": 4,
+      "name": "Archangels' Church",
+      "address": "Akhmeta, south of Sabero district",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-0018-17.jpg",
+      "history": "Akhmeta Archangels' Church is an architectural monument in Akhmeta Municipality, in the town of Akhmeta. It stands on a hill south of the Sabero district and dates back to the late Middle Ages. Built of cobblestone with occasional use of brick."
+    },
+    {
+      "N": 5,
+      "name": "Trinity Church Complex",
+      "address": "Akhmeta, above Uto district",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-0176-7.jpg",
+      "history": "Akhmeta Trinity Church is located in Akhmeta. The complex includes the Trinity Church, a chapel, a small church, ruins of two rectangular buildings, and a wall. The Trinity Church dates back to the 9th-10th centuries, the chapel to the 14th-15th centuries."
+    },
+    {
+      "N": 6,
+      "name": "Cholokashvili Castle Complex",
+      "address": "Akhmeta, Uto district",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Cholokashvili_Castle.jpg/500px-Cholokashvili_Castle.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "The Cholokashvili Castle in Matani is an important monument of late feudal residential and defensive architecture, located in the Alazani basin, in the foothills of Pankisi."
+    },
+    {
+      "N": 7,
+      "name": "Tskhrakara Palace",
+      "address": "Akhmeta",
+      "type": "National",
+      "category": "",
+      "image": "https://cdn.georgiantravelguide.com/storage/files/alvanis-tskhrakaras-sasakhle.jpg",
+      "history": "The Tskhrakara Palace of Alvani is located in the Kakheti region, in the village of Zemo Alvani, Akhmeta Municipality, on an elevated spot. It was built in the 16th century by King Levan of Kakheti."
+    },
+    {
+      "N": 9,
+      "name": "Sachino Church",
+      "address": "Near Akhaldaba village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-0138-2.jpg",
+      "history": "Sachino (Sachinos) Bzasakdari is located in Kakheti, southwest of Akhaldaba village, in the forest. It unites 2 churches, a chapel, a bell tower, and a room of unknown purpose into a single structure."
+    },
+    {
+      "N": 10,
+      "name": "Akhmeta Ghvtaeba Church",
+      "address": "Outskirts of Akhmeta",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-0427-22.jpg",
+      "history": "Akhmeta Ghvtaeba Church is an immovable cultural monument of national significance dating back to the second half of the 6th century, standing on the edge of Akhmeta near the cemetery."
+    },
+    {
+      "N": 11,
+      "name": "Archangel's Church",
+      "address": "Argokhi village cemetery",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Akhmeta_Archangel%27s_church.jpg/960px-Akhmeta_Archangel%27s_church.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "Akhmeta Archangel's Church is located in Akhmeta Municipality. A tower was later added to the south of the church, followed by a rectangular room from the west."
+    },
+    {
+      "N": 12,
+      "name": "Kvelatsminda Church",
+      "address": "Outskirts of Argokhi village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Argokhi_kvelatsminda_church.jpg/500px-Argokhi_kvelatsminda_church.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "Argokhi Kvelatsminda Church is located in the village of Argokhi, Akhmeta Municipality, 200 meters south of the village on a mountain. It dates back to the 8th-9th centuries and features frescoes from the 13th century."
+    },
+    {
+      "N": 13,
+      "name": "Tetri Giorgi Church",
+      "address": "Outskirts of Atskuri village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-0089-1-3.jpg",
+      "history": "Atskuri Tetri Giorgi Church is located in the village of Atskuri, Akhmeta Municipality. The complex includes a church, bell tower, wall, and outbuildings. The church and wall date back to the 10th-13th centuries."
+    },
+    {
+      "N": 14,
+      "name": "Church of the Virgin Mary",
+      "address": "Atskuri village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Atskuri_church.jpg/960px-Atskuri_church.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "According to historical sources, Christian worship at this site dates back to the 1st century. Tradition has it that Saint Andrew the First-Called left a miraculous icon of the Virgin Mary here."
+    },
+    {
+      "N": 15,
+      "name": "Samtskylebi Church",
+      "address": "Akhmeta Municipality, Khevistskhala village",
+      "type": "National",
+      "category": "",
+      "image": "https://photos.wikimapia.org/p/00/07/96/12/37_big.jpg",
+      "history": "The church is located 8 kilometers northeast of Khevistskhala village, at a place called Samtskylebi. It dates back to the 8th-9th centuries."
+    },
+    {
+      "N": 16,
+      "name": "Bzasakdari",
+      "address": "Akhaldaba village territory",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Bzasakdari.jpg/960px-Bzasakdari.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "Bzasakdari is a church located southwest of Akhaldaba village, in the forest. It combines 2 churches, a chapel, a bell tower, and a room of unknown purpose."
+    },
+    {
+      "N": 17,
+      "name": "Gorijvari Complex",
+      "address": "Outskirts of Axshani village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Gorijvari_of_axshani.jpg/250px-Gorijvari_of_axshani.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "Gorijvari is a three-nave basilica from the second half of the 9th century, located 1 kilometer from the village. The complex includes a bell tower and a wall."
+    },
+    {
+      "N": 19,
+      "name": "Bakhtrioni Fortress and Church",
+      "address": "Confluence of Alazani and Ilto rivers",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJRl4PV8XzKE9ziB2FmKPf3xFILvqSEHsFALX9YkcOi7wNp5YLV0X-hK0&s=10",
+      "history": "Bakhtrioni Fortress is a feudal-era fortress in Akhmeta Municipality, Kakheti. Located near the town of Akhmeta, southeast of Khorbalo village."
+    },
+    {
+      "N": 18,
+      "name": "Gurjisgori Burned Tower",
+      "address": "Akhmeta Municipality, Khevistskhala village",
+      "type": "",
+      "category": "Secular",
+      "image": "https://photos.wikimapia.org/p/00/07/96/12/17_big.jpg",
+      "history": "Gurjisgori Tower is located 500 meters west of Khevistskhala village on a wooded hill, dating back to the late Middle Ages."
+    },
+    {
+      "N": 20,
+      "name": "Girevi Tower",
+      "address": "Girevi village",
+      "type": "",
+      "category": "Secular",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX_--SeJEaocn2FrDZKj3q4GX86jS7_RnonaSO7_7c3A&s=10",
+      "history": "Located in the highlands of Tusheti, Girevi Tower is a prominent example of defensive engineering art that defined the lifestyle of local residents for centuries."
+    },
+    {
+      "N": 21,
+      "name": "Dartlo Architectural Complex",
+      "address": "Dartlo village",
+      "type": "National",
+      "category": "Secular",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9M7ryCTeSrJXtqRYSxpYEwkHi41o_g1a76ygpcIG4JA&s=10",
+      "history": "The architectural complex of Dartlo village (late Middle Ages) is located in the Pirikiti Gorge, 18 km away from Lower Omalo."
+    },
+    {
+      "N": 22,
+      "name": "Diklo Castle-House",
+      "address": "Diklo village",
+      "type": "National",
+      "category": "Secular",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgL97uOvL5sh5_OklYclK-rAUqYoIFv1zMtOQucCWPnQLz6iTog57H7LM&s=10",
+      "history": "Diklo Castle-House is an architectural monument south of Diklo village, Akhmeta Municipality, dating back to the late Middle Ages."
+    },
+    {
+      "N": 23,
+      "name": "Castle-House in Dochu",
+      "address": "Dochu village",
+      "type": "National",
+      "category": "Secular",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/gometsris-khe-2.jpg",
+      "history": "Dochu village was granted the status of a cultural heritage monument as a late medieval architectural settlement."
+    },
+    {
+      "N": 24,
+      "name": "Dzibakhevi Church",
+      "address": "Akhmeta Municipality, Dzibakhevi village",
+      "type": "National",
+      "category": "Secular",
+      "image": "https://photos.wikimapia.org/p/00/08/65/86/40_big.jpg",
+      "history": "Dzibakhevi Church, an 8th-9th century three-church basilica, is located 1 kilometer northwest of Dzibakhevi village."
+    },
+    {
+      "N": 26,
+      "name": "Alvani Tskhrakara",
+      "address": "Zemo Alvani village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/psx-20210606-133939-2.jpg",
+      "history": "Alvani Tskhrakara Palace is located in the Kakheti region, Zemo Alvani village, Akhmeta Municipality, on an elevated location."
+    },
+    {
+      "N": 27,
+      "name": "Trinity Church",
+      "address": "Zemo Alvani village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Church_of_Zemo_Alvani.jpg/500px-Church_of_Zemo_Alvani.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "Zemo Alvani Trinity Church is an architectural monument located in Georgia, Kakheti, Akhmeta Municipality, on the southern outskirts of Zemo Alvani village cemetery. It dates back to the 16th century."
+    },
+    {
+      "N": 28,
+      "name": "Church of John the Baptist",
+      "address": "Zemo Alvani village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Church_of_Alvani_of_John_the_Baptist.jpg/500px-Church_of_Alvani_of_John_the_Baptist.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+      "history": "Zemo Alvani John the Baptist Church is an 8th-9th century church in Zemo Alvani village, Akhmeta Municipality."
+    },
+    {
+      "N": 29,
+      "name": "Iakhsari Church",
+      "address": "Zemo Alvani village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://photos.wikimapia.org/p/00/09/02/51/60_big.jpg",
+      "history": "Iakhsari Church stands 3.5 km northwest of Zemo Alvani on a wooded mountain ridge in Kakheti. The monument dates back to the 9th-10th centuries."
+    },
+    {
+      "N": 30,
+      "name": "Church of the Virgin Mary",
+      "address": "Akhmeta Municipality, Sakobiano village",
+      "type": "National",
+      "category": "Secular, Religious",
+      "image": "https://www.heritagesites.ge/public/uploads/images/5b7fbda5ae275.jpg",
+      "history": "Sakobiano Church of the Virgin Mary is a medieval hall church located in Sakobiano village, Akhmeta Municipality."
+    },
+    {
+      "N": 8,
+      "name": "Nadirta",
+      "address": "Akhmeta Municipality, Tusheti",
+      "type": "National",
+      "category": "Secular",
+      "image": "/ნადირთა.jpeg",
+      "history": "This site is included in the list of cultural heritage monuments of Georgia and represents an important archaeological site."
+    },
+    
+    {
+    "N": 34,
+    "name": "Church",
+    "address": "Zemo Alvani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhEvERunD29sQuLLEssBZOi4dzvUqIskOuRUM3yyZJw&s=10",
+    "history": ""
+  },
+  {
+    "N": 35,
+    "name": "Church of the Virgin Mary and Small Churches",
+    "address": "Zemo Alvani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg9vcehlIr_gEdJaQFY4U4BvrP9HXMRSCQaC1omzuHLA&s",
+    "history": "Zemo Alvani Virgin Mary Church is a church in Akhmeta Municipality, located northwest of Zemo Alvani village in the cemetery. According to a construction inscription, it was built in 1854."
+  },
+  {
+    "N": 36,
+    "name": "Nunnery Complex",
+    "address": "Zemo Khodasheni village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://knews.ge/wp-content/uploads/487873731_10212689941001076_9077234050587394594_n-800x445.jpg",
+    "history": "Zemo Khodasheni Nunnery is located in Kakheti, in the village of Zemo Khodasheni, Akhmeta Municipality. It dates back to the 13th century. The complex includes St. Nicholas Church, a palace, a refectory, a belfry tower, residential structures, a wine cellar, and a surrounding wall."
+  },
+  {
+    "N": 38,
+    "name": "Monastery, Church, and Belfry",
+    "address": "Zemo Khodasheni village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://about.ge/storage/pois/zemo-khodashenis-monasteri-514-1.jpg",
+    "history": "Zemo Khodasheni Monastery was founded in the 16th century by King Levan of Kakheti (1520–1574) and his son Alexander II (1574–1605). According to an inscription on the western facade of the Annunciation Church, the Beraanti fortress (a wine cellar with a tower) and the western addition of the church date from 1760–1784."
+  },
+  {
+    "N": 39,
+    "name": "St. John the Baptist Church",
+    "address": "Zemo Khodasheni village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Church_of_Alvani_of_John_the_Baptist.jpg/500px-Church_of_Alvani_of_John_the_Baptist.jpg",
+    "history": "Zemo Khodasheni St. John the Baptist Church is located on the southern edge of Zemo Khodasheni village in the vineyards, Akhmeta Municipality. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 40,
+    "name": "St. George Church Ruins",
+    "address": "Omalo village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://media.travelguide.ge/uploads/packages/3-day-trip-sought-georogia-mtskheta-gori-bordjomi-rabati-vardzia-tsalka--7.webp",
+    "history": "Located near the village of Andriatsminda in the Samtskhe-Javakheti region, the St. George Church ruins represent one of the most authentic spots of local cultural heritage. Although only stone foundations and wall fragments remain today, the site retains a special spiritual and historical atmosphere."
+  },
+
+  {
+    "N": 42,
+    "name": "Iliurta St. George Church",
+    "address": "Former village of Iliurta",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://mematiane.ge/img/churches/ilurTa--TuSeTi--naTlimcemlis-eklesia-681a4c2a31838.jpg",
+    "history": "Iliurta St. George Church is located in the center of Iliurta village, Akhmeta Municipality. Built in 1870, it is a cross-domed structure constructed from slate and clay plaster."
+  },
+  {
+    "N": 43,
+    "name": "Indurta Towers",
+    "address": "Former village of Indurta",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT51vaYsFhXVhu9jkbkjCfiL9ZqA5WLkqeDEZcWWsxuNEQ4IEiWKfSt-6g&s=10",
+    "history": "Indurta Tower is located above the former village of Indurta in Akhmeta Municipality, Kakheti, on a rocky mountain slope to the northeast. Dating back to the late Middle Ages, the five-story tower narrows towards the top and is built of dry stone masonry."
+  },
+  {
+    "N": 44,
+    "name": "Kvavlo Towers",
+    "address": "Former village of Kvavlo",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/WLE_-_2020_-_Kvavlo_Tower.jpg/500px-WLE_-_2020_-_Kvavlo_Tower.jpg",
+    "history": "Kvavlo Tower is located on the northern edge of the former village of Kvavlo in Tusheti, Akhmeta Municipality. Dating to the late Middle Ages, the five-story tower tapers upward and is constructed of dry slate masonry."
+  },
+  {
+    "N": 46,
+    "name": "Matani Tskhrakara Monastery",
+    "address": "Zemo Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tskhrakara_of_Matani.jpg",
+    "history": "Matani Tskhrakara Monastery is a monastic complex located 3-4 km west of the village of Matani, in the mountains of Akhmeta Municipality, Kakheti region. By the decree of the President of Georgia dated November 7, 2006, the monastic complex was granted the category of an immovable monument of cultural heritage of national significance."
+  },
+  {
+    "N": 47,
+    "name": "Erelaant Saqdari",
+    "address": "Surroundings of Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Erelaant_church_01.jpg/500px-Erelaant_church_01.jpg",
+    "history": "Erelaant Saqdari is a 5th-6th century monument of Georgian architecture, located 4 km from Akhmeta, on the right side of the Tianeti highway. It is built of cobblestone, shirim, and limestone slabs used for the facades and interior wall facings."
+  },
+  {
+    "N": 48,
+    "name": "Tetri Giorgi Church",
+    "address": "Surroundings of Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Tetri_giorgi.jpg/500px-Tetri_giorgi.jpg",
+    "history": "Tetri Giorgi Church is a St. George complex located 2 km south of the village of Atskuri in Akhmeta Municipality, on a high hill. The complex includes a church, a belfry, a wall, and auxiliary structures. The church and wall date back to the 10th-13th centuries, the belfry to the 16th century, and the auxiliary structures were built at the turn of the 19th-20th centuries. The church is called Tetri Giorgi (White George) due to the white horse on which he is depicted riding in the icon."
+  },
+
+  {
+    "N": 50,
+    "name": "Cholokashvili Fortress",
+    "address": "Surroundings of Matani village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tskhrakara_of_Matani.jpg/960px-Tskhrakara_of_Matani.jpg.webp",
+    "history": "Matani Fortress (also known as the Cholokashvili ancestral fortress) is a late feudal architectural monument built by the Kakhetian nobles, the Cholokashvilis, in the mid-18th century, located north of the village of Matani in Akhmeta Municipality."
+  },
+  {
+    "N": 51,
+    "name": "St. Barbara Church",
+    "address": "Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://photos.wikimapia.org/p/00/07/96/08/99_big.jpg",
+    "history": "Matani St. Barbara Church is located in the northeastern part of the village of Matani, in the Ilikheti district, at the old cemetery. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 52,
+    "name": "St. Nicholas Church",
+    "address": "Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Church_of_St._Nikoloz_of_matani.jpg/960px-Church_of_St._Nikoloz_of_matani.jpg",
+    "history": "Matani St. Nicholas Church is a 16th-century church located in the northwestern part of the village of Matani, Akhmeta Municipality. The domed church (11 x 8.8 m) is built of cobblestone and broken stone. The drum of the dome and its pyramidal roof are made of brick. The church has three entrances from the south, west, and north, each positioned on the axis of its respective arm."
+  },
+  {
+    "N": 53,
+    "name": "Domed Saqdari",
+    "address": "Kurtanadzeuli Gorge",
+    "type": null,
+    "category": "Secular, Religious",
+    "image": "https://novators.ge/news/big_1585765197.jpg",
+    "history": "Domed Saqdari stands 8-9 km northeast of the village of Matani, in the Kurtanadzeuli river gorge. This cross-domed church (including annexes, measuring 13.8 x 8.7 m) dates back to the second half of the 9th century and is built using cobblestone and shirim ashlar blocks."
+  },
+  {
+    "N": 54,
+    "name": "Bziani Saqdari",
+    "address": "Matani village",
+    "type": null,
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/66/08/60_big.jpg",
+    "history": "Bziani Saqdari is a church in Akhmeta Municipality, located 5 kilometers southwest of the village of Matani, on a wooded mountain slope. It dates back to the late Middle Ages. The church is nearly square in plan (5.6 x 5 m) and is built of broken stone with lime mortar. Fairly large stones are used in the outer facing of the walls."
+  },
+  {
+    "N": 55,
+    "name": "Akhali Khati",
+    "address": "Matani village",
+    "type": null,
+    "category": "Secular, Religious",
+    "image": "https://cdn.georgiantravelguide.com/storage/files/matnis-akhali-khatis-eklesia.jpg",
+    "history": "Akhali Khati is a church in Akhmeta Municipality, standing 1.5-2 kilometers west of the village of Matani, on a slope. It dates back to the 16th-17th centuries. The church was painted during the 16th-17th centuries. Fragments of paintings are preserved in the conch, as well as on the longitudinal and western walls of the hall. The conch features fragments of the Deesis composition, depicting Christ in the center, blessing with His right hand while holding the Gospels near His chest."
+  },
+  {
+    "N": 56,
+    "name": "Iakhsri Saqdari",
+    "address": "Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://lh3.googleusercontent.com/grass-cs/AABkmLf8J2Xr-LqwGWWCU_4f-yu_84Sz8jp-Gxn3EYdWc7_aHumSH48eYG2jBNgIiDw-HrYFe-6bobW_DSp42iU--H6EMX2tm4rGB6FmEJpE0SzCfajndOEgkEe997AQgvORaHVnIaLdXA=s2000-w1904-h2000-rw",
+    "history": "Iakhsri Saqdari is a church in the village of Matani, Akhmeta Municipality, located 2 kilometers southwest of the village on the Iakhsri hill. It dates back to the late Middle Ages. The church is a hall-type structure (5 x 3.7 m) built of broken stone, with the entrance located on the south side."
+  },
+  {
+    "N": 57,
+    "name": "Archangel Church",
+    "address": "Matani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SvG3Wc_Ji6Qzt8dqsJTQtWa_EyyqG5IWH9ykhEnCwIwZwq1K0adQFq-M1lbNQYURAMuTCJpgrtt8YLiWaPTKvJYw9ZHqTj28JqjWWp0KZOooNUHWMSzTNqgtDpCLw0k6KzcbipIw=s1360-w1360-h1020-rw",
+    "history": "Matani Archangel Church is a church in Akhmeta Municipality, located 1.5 kilometers northeast of the village of Matani. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 58,
+    "name": "Zhamta Saqdari",
+    "address": "Matani village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://cdn.georgiantravelguide.com/storage/files/matnis-zhamta-saqdari.jpg",
+    "history": "Matani Zhamta Saqdari is located in Akhmeta Municipality, 500 meters northwest of the village of Matani. It dates back to the late Middle Ages. The church is a hall-type structure (17.2 x 9.2 m) built of cobblestones of various sizes. The monument is severely damaged: the supporting arches, vault, and part of the conch have collapsed. The current church was built on the site of a previously destroyed and abandoned church, apparently dating from the 8th-9th centuries, which was surrounded from the south and west by a continuous ambulatory."
+  },
+  {
+    "N": 59,
+    "name": "Ghvtba Church",
+    "address": "Maghraani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Maghraani_church.jpg/960px-Maghraani_church.jpg",
+    "history": "Maghraani Ghvtba (Divinity) Church is a church in Akhmeta Municipality, standing 2 kilometers north of the village of Maghraani, in the forest on the right bank of the Machareuli River. It dates back to the 15th-16th centuries. The church was built on an artificially leveled spot on a mountain slope and is surrounded by a low wall."
+  },
+
+  {
+    "N": 61,
+    "name": "Towers",
+    "address": "Ozhio village",
+    "type": "National",
+    "category": null,
+    "image": "https://photos.wikimapia.org/p/00/07/70/89/93_big.jpg",
+    "history": "The tower stands 300 meters southwest of the village, at a site known as the Andronikashvili settlement. It dates from the second half of the 18th century. The tower is circular in plan, tapering slightly towards the top. It features two construction layers from different periods, both built of cobblestones. Two floors and a small portion of the third-floor wall are preserved."
+  },
+  {
+    "N": 62,
+    "name": "Pankisi Fortress / Maghraani Fortress",
+    "address": "Maghraani village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/98/42/18_big.jpg",
+    "history": "Pankisi Fortress (also known in the late Middle Ages as Maghraani Fortress) is located on the ridge separating the Khalatsani and Maghraani (Machareuli) ravines. It served as the center of the Pankisi Eristavate in the high Middle Ages, founded by King Kvirike III the Great of Kakheti (1010–1037)."
+  },
+  {
+    "N": 64,
+    "name": "Trinity Church",
+    "address": "Ozhio village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://cdn.georgiantravelguide.com/storage/files/baikhos-ozhios-samebis-eklesia.jpg",
+    "history": "Baikho (Ozhio) Trinity Church was built in the 6th century and is located in Kakheti, near the village of Ozhio in Akhmeta Municipality, in the former village of Baikho."
+  },
+  {
+    "N": 65,
+    "name": "Cemetery Church",
+    "address": "Maghraani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://photos.wikimapia.org/p/00/08/65/57/31_big.jpg",
+    "history": "Located on the edge of Maghraani village in Akhmeta Municipality, the Maghraani Cemetery Church is a small hall-type church generally dating back to the 10th–12th centuries, set within the old cemetery."
+  },
+  {
+    "N": 66,
+    "name": "Tsikhisdjvari Church",
+    "address": "Maghraani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6cBz5ebvXG_Etg2nTBrL8VgwQYFQr7Q4uXYOc-fJjZw&s=10",
+    "history": "Tsikhisdjvari Church stands east of Maghraani village on a low hill in Akhmeta Municipality, Kakheti. It is a small late-medieval hall church built of broken stone that was once part of a fortified point overlooking the Alazani Valley."
+  },
+  {
+    "N": 67,
+    "name": "Palace - Khokeraant Settlement",
+    "address": "Maghraani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/65/60/16_big.jpg",
+    "history": "The palace located at the Khokeraanti settlement is a 15th-16th century architectural monument situated in Akhmeta Municipality."
+  },
+  {
+    "N": 25,
+    "name": "Omalo Tower",
+    "address": "Omalo village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://www.dzeglebi.ge/dzeglebi/o/tusheti%20omalo/koshkebi.jpg",
+    "history": "Omalo Tower is located in the village of Omalo, Akhmeta Municipality. Dating to the late Middle Ages, the three-story tower (3 x 3 m) tapers slightly towards the top and is constructed of broken stone faced externally with well-hewn shirim stone."
+  },
+  {
+    "N": 69,
+    "name": "Tower",
+    "address": "Sabue village",
+    "type": "National",
+    "category": null,
+    "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/2-copy-2.jpg",
+    "history": "Sabue Tower is located approximately 2–2.5 km north of Sabue village in Akhmeta Municipality, on the right bank of the Bodalkhevi River. This monument also dates back to the late Middle Ages."
+  },
+  {
+    "N": 70,
+    "name": "Church of the Virgin Mary",
+    "address": "Sabue village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gremi_Kakheti01.jpg/3840px-Gremi_Kakheti01.jpg",
+    "history": "Sabue Church of the Virgin Mary is an architectural monument standing in the center of Sabue village, Kvareli Municipality. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 73,
+    "name": "Alborishvili Church",
+    "address": "Sachale village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://knews.ge/wp-content/uploads/515495354_10213512189476774_4267246464760818527_n.jpg",
+    "history": "Alburushvili Church (often referred to as Alborishvili Church) is located in Kakheti, approximately 1.5 kilometers southwest of the village of Sachale in Akhmeta Municipality. The monument dates back to the late Middle Ages."
+  },
+  {
+    "N": 74,
+    "name": "Parsma Towers",
+    "address": "Former village of Parsma",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/200883361_2887549451468286_6752541350609931981_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1943&ctp=p526x296&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEF_r-WYDENEAsbi-znWh_lZT9q7TNAbwVlP2rtM0BvBZEKvyJX6zTjdcyfwzDNV8lL7VALU8fOJY72am0k3Mbq&_nc_ohc=JA95q4l6VB4Q7kNvwGhVxBF&_nc_oc=Adoe6mCFnakAl7DBX3lXCEzof2CgLRiwjucBbYLoHwJwCuG9IWCENd_LT3bI6juNJDM&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Qupij2_zV8v5CIsd2UwuUQ&_nc_ss=7b2a8&oh=00_AQO8DwEEu4CCBbCQqPGtlV4dK-8fag3luiezP0Xbhkgvkw&oe=6AFDD362",
+    "history": "Parsma is a former village in Akhmeta Municipality, located in historical Tusheti, Pirikita (Agma) community, at an elevation of 2075 meters above sea level. It is distinguished by its monumental architecture and the largest towers in Tusheti. The Parsma towers and castle-houses are cultural heritage monuments of national significance that protected the Pirikita community from foreign attacks over centuries."
+  },
+  {
+    "N": 75,
+    "name": "St. John the Baptist Church",
+    "address": "Pichkhovani village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2UixMmdcHnUW22vQD2ctWPGJd-55j3MQ6lQpgz8vEOQG1D2Fmmg_KJtdK&s=10",
+    "history": "The monument dates back to the 8th–9th centuries and is located in the northeastern part of Pichkhovani village. It is a three-church basilica built of broken stone of various sizes with irregular masonry."
+  },
+  {
+    "N": 78,
+    "name": "St. Nino Church",
+    "address": "Kistauri village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/St._nino_church_of_kistauri.jpg/960px-St._nino_church_of_kistauri.jpg",
+    "history": "Kistauri St. Nino Church is a 19th-century church in the village of Kistauri, Akhmeta Municipality, located alongside the Telavi-Akhmeta highway."
+  },
+ 
+  {
+    "N": 80,
+    "name": "St. John the Baptist Church and Tower",
+    "address": "Kistauri village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://photos.wikimapia.org/p/00/08/62/00/81_big.jpg",
+    "history": "Kistauri St. John the Baptist Church and pillar-tower are located in the village of Kistauri, Akhmeta Municipality, approximately 1 kilometer southeast of the village on a forested mountain."
+  },
+  {
+    "N": 81,
+    "name": "St. Theodore Church and Complex",
+    "address": "Koreti village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://photos.wikimapia.org/p/00/09/02/52/44_big.jpg",
+    "history": "The St. Theodore Church complex in Koreti village is located in Akhmeta Municipality, west of Koreti on a hill covered by dense forest. The monument dates back to the Middle Ages."
+  },
+  {
+    "N": 83,
+    "name": "Columns (Svebi)",
+    "address": "Qvareltskali village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPRwej5SvP18Dwzax8ujD3sk-8tgq6Y5FvFNYvJ_bVECiteDoNVBcMCs&s=10",
+    "history": "Qvareltskali Columns is a historical-architectural complex and ancient shrine located in Akhmeta Municipality, in the Pankisi Gorge, approximately 500 meters north of the village of Qvareltskali."
+  },
+  {
+    "N": 85,
+    "name": "St. George Church",
+    "address": "Shenako village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Shenaqo_Sameba_Church%2C_Tusheti.jpg/960px-Shenaqo_Sameba_Church%2C_Tusheti.jpg",
+    "history": "Shenako St. George Church is located on the eastern edge of the village of Shenako in Akhmeta Municipality. It dates back to the 19th century."
+  },
+
+  {
+    "N": 89,
+    "name": "Chigo Castle-Houses",
+    "address": "Chigo village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIbcw2ByuZHZ164EJAQfh_vJZXZWpFRU8hkTSvKVXnDq-QcKm3LWQuDprb&s=10",
+    "history": "Chigo castle-houses are located in the Kakheti region, Akhmeta Municipality, in the historical area of Tusheti (Pirikita Gorge), at an elevation of approximately 1680 meters above sea level. The village of Chigo is distinguished by its traditional architecture and cultural heritage monuments."
+  },
+  {
+    "N": 90,
+    "name": "Tsaro Architectural Complex",
+    "address": "Former village of Tsaro",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqZp0au1RHbHtzFCpGi4KzGfkSYoZRj7ajcfnNFLIRMJnC0on32Bj1Yg&s=10",
+    "history": "The Tsaro architectural complex is located in historical Tusheti, Akhmeta Municipality, specifically in the Tsovata Gorge, on the left bank of the Tushetis Alazani River. It is a unique combination of medieval defensive, residential, and cult structures, holding the status of a cultural heritage monument of national significance."
+  },
+  {
+    "N": 91,
+    "name": "Tshesho Architectural Complex",
+    "address": "Former village of Tshesho",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-6748-2.jpg",
+    "history": "Tshesho architectural complex is located in Georgia, Kakheti region, Akhmeta Municipality, in the historical region of Tusheti (Pirikita/Samtsikhi community). It includes the defensive and residential structures of the high-mountain village of Tshesho and its surrounding area."
+  },
+  {
+    "N": 92,
+    "name": "Chontio Castle-Houses",
+    "address": "Former village of Chontio",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/57425265_1074165869437377_6621062824066023424_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHJIwBIKuBE2E6M_zatWQ0JsUnm5fofAO2xSebl-h8A7a0PdooVAA-3U7m98wstJ9d0jhc4vGcOQJEy75YIW6oX&_nc_ohc=NHWuvsI2IMgQ7kNvwGJ_a3e&_nc_oc=Ado_ETlRSOD7sxpZNEu4TYgjv9CJrrtm9NpItxMLEbLKsfYKZbE9yUI8ScZfuWjnWv0&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=PtEzZwtrjp6SVkO48g0XTA&_nc_ss=7b2a8&oh=00_AQP0NyZNK3Rh2mY849QFTsu7THQau0hKewvRL1oLUJRdGA&oe=6AFDB628",
+    "history": "The castle-house was built in the 18th century and is located on the northwestern edge of the former village."
+  },
+  {
+    "N": 93,
+    "name": "Tower",
+    "address": "Khakhabo village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Khakhabo%2C_Tusheti.jpg/960px-Khakhabo%2C_Tusheti.jpg",
+    "history": "Khakhabo Tower is located in Akhmeta Municipality, Tusheti, in the former village of Khakhabo. The six-story tower stands in the village (6.2 x 5.8 m; height 12.5 m), tapering slightly towards the top, built of dry slate masonry. The monument is damaged: the roof and interfloor structures have collapsed, and the upper part of the 6th-floor walls is ruined."
+  },
+  {
+    "N": 94,
+    "name": "Kurtanidze St. Marine Church and Complex",
+    "address": "Khevischala village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/St._Marine_church_of_Khevischala.jpg/960px-St._Marine_church_of_Khevischala.jpg",
+    "history": "Kurtanidzeuli St. Marine Church is a church in the village of Khevischala, Akhmeta Municipality, located 2.5 kilometers northwest of the village, dating back to the 12th-13th centuries."
+  },
+  {
+    "N": 95,
+    "name": "Kachalauri Fortress Complex",
+    "address": "Khevischala village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://cdn.georgiantravelguide.com/storage/files/kachalauri-fortress-4.jpg",
+    "history": "Kachalauri Fortress is an architectural complex located on a wooded hill about 400 meters northwest of Khevischala village. The complex includes a church, several structures, and a fortified wall with a tower. The church is two-naved and dates back to the 8th-9th centuries, built of broken stone with irregular masonry."
+  },
+  {
+    "N": 96,
+    "name": "Bakhtrioni Church",
+    "address": "Khorbalo village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://madloba.info/media/images/Tserkov_kreposti_Bakh.2e16d0ba.fill-720x405.format-avif.avif",
+    "history": "Bakhtrioni Fortress Church stands east of Bakhtrioni Fortress in Akhmeta Municipality. Based on general features, the church belongs to the late centuries."
+  },
+  {
+    "N": 97,
+    "name": "Church",
+    "address": "Khorbalo village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QN7DQ1BlaNsB6sTU3e3_Y2RzhvuqNauisO1jyj-hI07BkahSZPu_O0augDpYj-KQhiy_LzmLzDS26YQoNKN43y1F_8bVdFgXA_M0rtYUC8p-BjHxdve4Ha-SM9L5QF576E0xo6PA=s1360-w1360-h1020-rw",
+    "history": "Several historical churches and small sanctuaries dating back to the late Middle Ages are located in the village of Khorbalo, Akhmeta Municipality."
+  },
+  {
+    "N": 99,
+    "name": "Tsikhisdjvari Church",
+    "address": "Khorbalo village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/116875663_3205513842849523_5313788947159572257_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEdb6c9T0oxPBOI8H7wRv-EMmpMXDJ-sWUyakxcMn6xZYnvmjY2aPKSs5c9UQ_0QfKZTWPn-6jbyalQPOQqrQ7v&_nc_ohc=9_h077jyyx4Q7kNvwHekVAV&_nc_oc=AdrV88QngdMonpwyPUanq3q8pNu-NLcIpj3cf1LUBYuo-2cX5oHlDLJrl35sEnUJ0Ow&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=QcpmcgtniqDbyqUqEmHimQ&_nc_ss=7b2a8&oh=00_AQPBmzQkD3eDVcdfl72rf0gZddoKrkbbfHw4NDeXQLpG7A&oe=6AF319D0",
+    "history": "This late medieval monument consists of a church and a belfry added to it later. The church and the first floor of the belfry are built of broken stone, while the second floor of the belfry is made of brick. Large shirim stones are incorporated into the masonry on the church facades."
+  },
+  {
+    "N": 103,
+    "name": "Kviratskhoveli Church",
+    "address": "Jokolo village",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TIgb00ILag8VWyhOjR9__aK7i9t4dqlfEPlGPO-UyHG3GOWOI4tknbWcIBrnUIoG2gIPq8xKUD4DafzDYM9HEuCU8UUBWb5Xvf7hq122GISu9Ytfx-Sd-3_SVu20xr4alxTXveNFk4FA2H=s1360-w1360-h1020-rw",
+    "history": "Jokolo Kviratskhoveli Church is located on the right bank of the Alazani River, in the historical Pankisi Gorge, situated in the Caucasus foothills of the Kakheti region. Geographically, this church monument occupies a strategic territorial plateau near the historical village of Jokolo, serving both as a spiritual center and an important tactical observation point for the local population."
+  },
+  {
+    "N": 106,
+    "name": "Tower",
+    "address": "Jokolo village",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Pankisi_Valley._Village_Jokolo.jpg/960px-Pankisi_Valley._Village_Jokolo.jpg",
+    "history": ""
+  },
+  {
+    "N": 107,
+    "name": "Hegho Towers",
+    "address": "Hegho settlement site",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://www.tushetipl.ge/images/ncPdmM7YfC3119JRiaoHiwe4I5M9X4.jpg",
+    "history": "The abandoned village of Hegho and the Hegho towers are located in the Kakheti region, Akhmeta Municipality, in the historical region of Tusheti (Pirikita community). It is built about 50 kilometers from the village of Omalo, at the confluence of the Larovanistsqli and Kvakhidistsqli rivers, on a high mountain. In 2018, by decree of the Government of Georgia, the former village of Hegho was granted the status of an immovable cultural heritage monument of national significance."
+  },
+  {
+    "N": 111,
+    "name": "Chikhijvari Church",
+    "address": "Uto district, Akhmeta city",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/67/53/37_big.jpg",
+    "history": "\"Chikhijvari\" Church (often referred to as Tsikhijvari Church) is a historical and architectural monument in Kakheti, specifically in the \"Uto\" district of the city of Akhmeta. Architectural style: The church is of a hall-type and dates back to the High Middle Ages, although traces of later restoration can also be observed."
+  },
+  {
+    "N": 113,
+    "name": "Dochu Village",
+    "address": "Akhmeta Municipality, Tusheti",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%E1%83%A1%E1%83%9D%E1%83%A4%E1%83%94%E1%83%9A%E1%83%98_%E1%83%93%E1%83%9D%E1%83%AD%E1%83%A3.jpg/960px-%E1%83%A1%E1%83%9D%E1%83%A4%E1%83%94%E1%83%9A%E1%83%98_%E1%83%93%E1%83%9D%E1%83%AD%E1%83%A3.jpg?utm_source=ka.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "history": "Dochu is a village in Akhmeta Municipality (administrative unit of Tusheti). It is located on the southern slope of the Makratela ridge, which divides the Tushetian Alazani and Pirikiti Alazani rivers, in the Gometsari Gorge, at an altitude of 2050 meters above sea level, 102 km from Akhmeta."
+  },
+  {
+    "N": 115,
+    "name": "F. Peikrishvili Residential House",
+    "address": "Matani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/67/60/82_big.jpg",
+    "history": "The residential house of F. Peikrishvili (Fido Peikrishvili) is located in the village of Matani, Akhmeta Municipality, and represents a cultural heritage monument."
+  },
+  {
+    "N": 116,
+    "name": "Church of the Virgin Mary",
+    "address": "Matani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://villagematani.wordpress.com/wp-content/uploads/2013/11/p1080926.jpg?w=600",
+    "history": "The Church of the Virgin Mary dates back to the 18th century. The church is a hall-type structure (12.7 x 7.5 m) built with alternating courses of cobblestone and brick."
+  },
+  {
+    "N": 119,
+    "name": "Didbatoni Complex (1) Hall Church; 2) Wine Cellar)",
+    "address": "Matani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Didbatoni%27s_church_of_Matani.jpg/960px-Didbatoni%27s_church_of_Matani.jpg",
+    "history": "Didbatoni Church is located on a wooded mountain slope 600-700 meters northwest of the village of Matani, Akhmeta Municipality. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 120,
+    "name": "Hegho Settlement",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://about.ge/storage/pois/girevi-sezonuri-sofeli-461_mth.jpg",
+    "history": "Hegho is a historical abandoned settlement in Tusheti (Pirikita community), Akhmeta Municipality, located in the Pirikiti Alazani Gorge, north of the village of Girevi, about 50 kilometers from Omalo."
+  },
+  {
+    "N": 121,
+    "name": "Chontio Settlement",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": null,
+    "category": "Secular",
+    "image": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/57504487_1074165859437378_9158329846693101568_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGPXtMk99Fwi6c_amek3cxbsuF62MCDtHuy4XrYwIO0e6ypXpCV2VzXVlocr34V-QxiR5tMybrVBowroiDYnnWP&_nc_ohc=6PvgLpdRD0IQ7kNvwFjSj7A&_nc_oc=AdpKmWRBKWS4rDmryex_hY-4SFfCS5CzzZ0FSd4uefeQ6z9vcLhwhMBYphiSTmD0Ue4&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=PtEzZwtrjp6SVkO48g0XTA&_nc_ss=7b2a8&oh=00_AQOGkL1Oohud9fvxGHz6x8o3o3C3vdQxAi3M82T6cvm5Rg&oe=6AFDD470",
+    "history": "Chontio is a historical abandoned settlement in Georgia, Akhmeta Municipality, in the historical region of Tusheti (Pirikita or Aghma community). Located within the Tusheti Protected Areas at an altitude of 2190 meters above sea level, the village consisted of about 25 households before being abandoned."
+  },
+  {
+    "N": 122,
+    "name": "Tsaro Settlement",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": null,
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPDfuZ_p7NLe7jPRU3me2jjg1wVrnhF2a75z8nn1oWSBK2WbBm8QqFqv-&s=10",
+    "history": "Tsaro Settlement is located in eastern Georgia, in Tusheti, Tsovata Gorge, Akhmeta Municipality. It was granted the status of an immovable cultural heritage monument of national significance (by decree of July 10, 2018)."
+  },
+  {
+    "N": 123,
+    "name": "Parsma Village",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": null,
+    "category": "Secular",
+    "image": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/200883361_2887549451468286_6752541350609931981_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1943&ctp=p526x296&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEF_r-WYDENEAsbi-znWh_lZT9q7TNAbwVlP2rtM0BvBZEKvyJX6zTjdcyfwzDNV8lL7VALU8fOJY72am0k3Mbq&_nc_ohc=JA95q4l6VB4Q7kNvwGhVxBF&_nc_oc=Adoe6mCFnakAl7DBX3lXCEzof2CgLRiwjucBbYLoHwJwCuG9IWCENd_LT3bI6juNJDM&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=Qupij2_zV8v5CIsd2UwuUQ&_nc_ss=7b2a8&oh=00_AQO8DwEEu4CCBbCQqPGtlV4dK-8fag3luiezP0Xbhkgvkw&oe=6AFDD362",
+    "history": "Parsma is a village in Akhmeta Municipality, located in the historical territory of Tusheti. On June 15, 2018, by order of the General Director of the National Agency for Cultural Heritage Preservation of Georgia, Parsma was granted the status of an immovable cultural heritage monument, and by government decree on July 10, 2018, it was designated as a category of national significance."
+  },
+  {
+    "N": 124,
+    "name": "Kvavlo Village",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": null,
+    "category": "Secular",
+    "image": "https://cdn.georgiantravelguide.com/storage/files/kvavlo-8.jpg",
+    "history": "Kvavlo is a historical high-mountain village in Georgia, Kakheti region, Akhmeta Municipality, within the Tusheti Protected Area, about 7-8 kilometers from Omalo, situated on a mountain on the left bank of the Pirikiti Alazani River. It has been assigned the category of national significance."
+  },
+  {
+    "N": 125,
+    "name": "Indurta Settlement",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuz4W8wIeR-RSZlMbab9csX_L6pSWSBDv7nyKDHZ1KD5X1HZRKUtnLjE9e&s=10",
+    "history": "Indurta is a historical abandoned village and cultural heritage monument in Tusheti (Akhmeta Municipality), in the Tsovata Gorge, about 20 kilometers from the village of Omalo. Situated on the left bank of the Tushetis Alazani River on a high, rocky mountain slope, it has held the status of a national significance cultural monument since 2018."
+  },
+  {
+    "N": 126,
+    "name": "Old Diklo Fortress Village",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdEJcj2svaj7gTUPO5l7UaW-hCg9OVRIo0pON1rtyXegn1Jen1_jpV8X1n&s=10",
+    "history": "Old Diklo (also known as Diklo Fortress or Old Wall) is an abandoned historical fortress-village and settlement in Kakheti, Akhmeta Municipality, Tusheti, which is currently a cultural heritage monument of national significance."
+  },
+  {
+    "N": 127,
+    "name": "Dakiurta Settlement",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF7x29Cfu0blGMdHprtKLBiON8mt-RxC98D6rrp0Weww&s=10",
+    "history": "Dakiurta is a historical abandoned settlement in Georgia, Kakheti region, Akhmeta Municipality, in Tusheti (Pirikita or Aghma community), located between the villages of Girevi and Chontio. The village was abandoned after 1917 and represents one of Tusheti's historical architectural and cultural heritage monuments."
+  },
+  {
+    "N": 128,
+    "name": "Girevi Village",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dsc-6795-2.jpg",
+    "history": "Girevi is an abandoned settlement in Georgia, Kakheti region, Akhmeta Municipality, in the historical Pirikita community, 50 kilometers from the village of Omalo, on the left bank of the Pirikiti Alazani River."
+  },
+  {
+    "N": 129,
+    "name": "Ageurta Settlement",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2V2O8tuntsSjyoQqvxpMWK7Te6yWQleaG92hhorzFlSiNr9tVfIsjM9iM&s=10",
+    "history": "Ageurta Settlement (also referred to as Aguerta) is a 17th-18th century historical monument located in Akhmeta Municipality, Kakheti region, historical Tusheti. It is built in the Chagma Gorge, approximately 9 kilometers away from the village of Lower Omalo."
+  },
+  {
+    "N": 130,
+    "name": "Trinity Tower-Shrine",
+    "address": "Argokhi village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmIGlLz_MpZtjOOHYHTo_AhrkZYJYuKCgvVpFthhYwD6RFWiJm4nwAvY&s=10",
+    "history": "Argokhi Trinity Tower-Shrine is a historical architectural monument located in Kakheti, above the village of Argokhi in Akhmeta Municipality. This structure represents an interesting example of defensive and cult architecture characteristic of the border strip between Kakheti and the highlands."
+  },
+  {
+    "N": 131,
+    "name": "Argokhi Tower",
+    "address": "Argokhi village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7GYC6nDcVkWEsX75zDreBKf_n6geowU64ppOiwqs4VUeu1vbAj5jge0&s=10",
+    "history": "Argokhi Tower is located in Akhmeta Municipality, northeast of Argokhi village at the cemetery, and dates back to the late Middle Ages. The tower is square in plan (5.8 x 5.8 m), built of broken stone with larger stones used on the facades. The walls are plastered inside and out. The monument is damaged: four floors are preserved, interfloor structures have collapsed, and the first floor is half-filled with rubble."
+  },
+  {
+    "N": 134,
+    "name": "Birkiani Church",
+    "address": "Birkiani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://cdn.1tv.ge/app/uploads/2018/02/27657815_10215726023011734_1131262421595505527_n-1518085892.jpg",
+    "history": "Birkiani Church of the Virgin Mary is a church located west of the village of Birkiani in Akhmeta Municipality. It dates back to the 8th-9th centuries."
+  },
+  {
+    "N": 135,
+    "name": "Birkiani Palace Complex",
+    "address": "Birkiani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://www.heritagesites.ge/uploads/images/5b767d1112bef.jpg",
+    "history": "It is a historical and architectural monument in Georgia, located in the village of Birkiani (Pankisi Gorge), Akhmeta Municipality. By decision of the National Agency for Cultural Heritage Preservation, the complex was granted the status of an immovable cultural heritage monument in 2018."
+  },
+  {
+    "N": 136,
+    "name": "Duisi Saqdristavi Church",
+    "address": "Duisi village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://cdn.1tv.ge/app/uploads/2018/08/40086223_10217328032300965_1629176452236705792_n-1535184826.jpg",
+    "history": "Duisi (Saqdristavi) Church is located in the village of Duisi, Akhmeta Municipality. It stands 800 meters east of the village on a hill along the left bank of the Alazani River. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 137,
+    "name": "Gviniani Church Complex",
+    "address": "Duisi village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://www.heritagesites.ge/uploads/images/5b78024bd57f4.jpg",
+    "history": "Gviniani Church Complex is located in the village of Duisi, Akhmeta Municipality, and dates back to the High Middle Ages. On July 24, 2018, by decision of the National Agency for Cultural Heritage Preservation of Georgia, the complex was granted the status of an immovable cultural heritage monument."
+  },
+  {
+    "N": 138,
+    "name": "Bziana Church",
+    "address": "Zemo Khalatsani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://www.heritagesites.ge/uploads/images/5b879f4de2cc4.jpg",
+    "history": "Zemo Khalatsani Bziana Church is located northeast of the village of Zemo Khalatsani in Akhmeta Municipality, on a mountain slope in the forest. It dates back to the Early Middle Ages. The monument is heavily damaged: the building is almost entirely buried in the ground and covered externally by boxwood trees."
+  },
+  {
+    "N": 139,
+    "name": "Gverdmoshlili Tower",
+    "address": "Zemo Khalatsani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/66/18/62_big.jpg",
+    "history": "Gverdmoshlilto Tower (also referred to as the second tower) is located in the Kakheti region, in the village of Zemo Khalatsani, Akhmeta Municipality. It is one of the prominent historical and architectural monuments of this village in the Pankisi Gorge, standing on a mountain slope about 600 meters north of the village. It dates back to the late Middle Ages."
+  },
+  {
+    "N": 140,
+    "name": "Kviria Castle-House",
+    "address": "Zemo Khalatsani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://photos.wikimapia.org/p/00/08/66/17/96_big.jpg",
+    "history": "Kviria Castle-House is located in the Kakheti region, in the village of Zemo Khalatsani, Akhmeta Municipality. In 2018, this historical cultural heritage monument was granted the status of an immovable cultural heritage monument by the National Agency for Cultural Heritage Preservation of Georgia."
+  },
+  {
+    "N": 141,
+    "name": "Fataliant Tower",
+    "address": "Zemo Khalatsani village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://cdn.1tv.ge/app/uploads/2018/10/1538834638-43422639_10217680582034488_2135100286623023104_n.jpg",
+    "history": "Fataliant Tower is a late medieval architectural monument located in the village of Zemo Khalatsani (Pankisi Gorge), Akhmeta Municipality."
+  },
+  {
+    "N": 142,
+    "name": "Ascension Church",
+    "address": "Kutsakhta village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://www.heritagesites.ge/uploads/images/5b7d22deb1228.jpg",
+    "history": "Kutsakhta Ascension Church is located in the village of Kutsakhta, Akhmeta Municipality. It stands on a forested hill north of the village and dates back to the Middle Ages."
+  },
+  {
+    "N": 143,
+    "name": "Elia Church Ruins",
+    "address": "Kutsakhta village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://cdn.georgiantravelguide.com/storage/thumbnails/dji-0331-2.jpg",
+    "history": "Elia Monastery is located in Kakheti, in the southern part of Dedoplistsqaro, on a twin-peaked limestone mountain. A temple dedicated to St. Elijah the Tishbite has existed on Mount Lia since the 6th century. Every August 2nd, on the feast day of the holy prophet Elijah the Tishbite, many people gather here, spending the night on saddles and offering prayers at the foot of the Elia cliff."
+  },
+  {
+    "N": 144,
+    "name": "Lomisa Church",
+    "address": "Kutsakhta village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://www.heritagesites.ge/uploads/images/5b73da088741e.jpg",
+    "history": "Lomisa Shrine (Church) is located in the village of Kutsakhta (in the middle of the village), Akhmeta Municipality, and dates back to the late Middle Ages."
+  },
+  {
+    "N": 145,
+    "name": "Remains of a Wine Cellar",
+    "address": "Kutsakhta village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://www.heritagesites.ge/uploads/images/5bbb4f44469de.jpg",
+    "history": "The High Middle Ages wine cellar remains located in the village of Kutsakhta, Akhmeta Municipality, have been granted the status of an immovable cultural heritage monument."
+  },
+  {
+    "N": 156,
+    "name": "Church",
+    "address": "Duisi village, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular, Religious",
+    "image": "https://cdnn1.img.sputnik-georgia.com/img/24175/10/241751083_0:9:1000:575_600x0_80_0_0_5125b70e497ffd865a93d797a5f1229d.jpg.webp",
+    "history": "The medieval Gviniani Church complex located in the village of Duisi has been granted the status of an immovable cultural heritage monument. The hall-type church is built of broken stone and sandstone of various sizes with mortar."
+  },
+  {
+    "N": 157,
+    "name": "Tower",
+    "address": "Basso settlement, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAaebiBeYVUT4eQB67zkV7xwAwW09Oi9nj8wdiyOPNUsu7KeUEWnShfGhg&s=10",
+    "history": "Basso Tower is located in the Kakheti region, Akhmeta Municipality, in historical Tusheti (Pirikita community), on the southern edge of the abandoned village of Basso. The monument is situated about 100–150 meters northwest of the village of Parsma, on the left bank of the Pirikiti Alazani River. It dates back to the 17th–18th centuries."
+  },
+  {
+    "N": 160,
+    "name": "Nakudurta",
+    "address": "Tusheti, Akhmeta Municipality",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQVBdrSeYnjhfyKblJ5QXZQ9gTrimxkn_aq93LRUg9ZcjsWje_A5s_Bs5&s=10",
+    "history": ""
+  },
+  {
+    "N": 161,
+    "name": "Jandieri Tower",
+    "address": "Akhmeta city",
+    "type": "National",
+    "category": "Secular",
+    "image": "https://scontent.ftbs7-1.fna.fbcdn.net/v/t1.6435-9/108686666_3150937088307199_530967782533402627_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x768&ctp=s1024x768&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGzvL1xW8O8WjnyRGBY6IRxpRCoz88QHZWlEKjPzxAdlf40sArfCYgXJ6XT0_YvpQwn7chsYZovHq7uzeCrC02r&_nc_ohc=gOqghgH70pAQ7kNvwFwjFAH&_nc_oc=AdoilVEM0K433ofYWNiS3KvRKHY8VydAzfEchClOLH_mkRnW6PmPPptybOd7olLHhMk&_nc_zt=23&_nc_ht=scontent.ftbs7-1.fna&_nc_gid=5TREJBoWDvAUBIJGsvjxPg&_nc_ss=7b2a8&oh=00_AQPcSaFx_2Mqkpv9tff9o0y3MqD0X97GtymGc04b5tFv8Q&oe=6AF31BED",
+    "history": "Jandieri Tower is located in the Kakheti region, in the northeastern part of the city of Akhmeta. It dates back to the 18th century. The tower-type residential house with a wine cellar belonged to the Jandieri family. It is built of broken stone. It was repaired in 1950. Currently, the defensive battlement has been converted into an attic and covered with a gable tile roof."
+  }
+  
+  ],
+  "statue_details": {
+    "not_found": "Object not found",
+    "back_to_list": "Back to list",
+    "address": "Address",
+    "view_on_maps": "View on map",
+    "category": "Category",
+    "manager": "Manager",
+    "phone": "Contact number",
+    "history": "History",
+    "no_history": "Historical information for this monument has not been added yet.",
+    "note": "Note:",
+    "not_specified": "Not specified"
+  }
+}

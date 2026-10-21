@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Home.css";
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <main className="home">
       <section className="hero">
@@ -10,19 +13,17 @@ function Home() {
             <span>AKHMETA</span>
 
             <h1>
-              აღმოაჩინე
+              {t("home.hero_title_1")}
               <br />
-              ახმეტის მემკვიდრეობა
+              {t("home.hero_title_2")}
             </h1>
 
-            <p>
-              ისტორია, კულტურა, ძეგლები და მუზეუმები ერთ სივრცეში
-            </p>
+            <p>{t("home.hero_desc")}</p>
 
             <div className="hero-buttons">
-              <Link to="/museums">მუზეუმების ნახვა</Link>
+              <Link to="/museums">{t("home.view_museums")}</Link>
               <Link to="/statues" className="secondary-btn">
-                ძეგლების ნახვა
+                {t("home.view_statues")}
               </Link>
             </div>
           </div>
@@ -30,55 +31,32 @@ function Home() {
       </section>
 
       <section className="intro">
-        <span className="section-label">ახმეტის მუნიციპალიტეტი</span>
+        <span className="section-label">{t("home.municipality_label")}</span>
 
         <h2>
-          ადგილი, სადაც ისტორია
+          {t("home.intro_title_1")}
           <br />
-          დღემდე ცოცხლობს
+          {t("home.intro_title_2")}
         </h2>
 
-        <p>
-          ახმეტის მუნიციპალიტეტი კახეთის ერთ-ერთი გამორჩეული ისტორიულ-კულტურული
-          რეგიონია. აქ ერთმანეთს ხვდება უძველესი ისტორია, ქართული არქიტექტურა,
-          მთის ტრადიციები და უნიკალური ბუნება.
-        </p>
-
-        <p>
-          მუნიციპალიტეტში მდებარეობს მნიშვნელოვანი კულტურული ძეგლები,
-          მუზეუმები, ეკლესია-მონასტრები, ციხე-ქალაქები და თუშეთის უნიკალური
-          კულტურული ლანდშაფტი.
-        </p>
+        <p>{t("home.intro_p1")}</p>
+        <p>{t("home.intro_p2")}</p>
       </section>
 
-      
       <section className="categories">
         <div className="category-card museum-card">
           <div>
-            
-
-            <h3>მუზეუმები</h3>
-
-            <p>
-              გაეცანი ახმეტის მუნიციპალიტეტში არსებულ მუზეუმებსა და მათ
-              უნიკალურ კოლექციებს.
-            </p>
-
-            <Link to="/museums">მუზეუმების ნახვა </Link>
+            <h3>{t("home.museums")}</h3>
+            <p>{t("home.museums_desc")}</p>
+            <Link to="/museums">{t("home.view_museums")}</Link>
           </div>
         </div>
 
         <div className="category-card statue-category-card">
           <div>
-
-            <h3>ძეგლები</h3>
-
-            <p>
-              აღმოაჩინე ისტორიული ეკლესიები, ციხეები, მონასტრები და სხვა
-              კულტურული ძეგლები.
-            </p>
-
-            <Link to="/statues">ძეგლების ნახვა </Link>
+            <h3>{t("home.statues")}</h3>
+            <p>{t("home.statues_desc")}</p>
+            <Link to="/statues">{t("home.view_statues")}</Link>
           </div>
         </div>
       </section>
@@ -86,144 +64,136 @@ function Home() {
       <section className="featured">
         <div className="section-heading">
           <div>
-            <span className="section-label">კულტურული მემკვიდრეობა</span>
-            <h2>გამორჩეული ადგილები</h2>
+            <span className="section-label">{t("home.heritage_label")}</span>
+            <h2>{t("home.featured_places")}</h2>
           </div>
         </div>
 
         <div className="featured-grid">
           <article className="heritage-card" id="hide">
-            <div className="heritage-image kvetera" role="img" aria-label="ქვეტერას ციხე-ქალაქი"></div>
+            <div
+              className="heritage-image kvetera"
+              role="img"
+              aria-label={t("home.kvetera_title")}
+            ></div>
 
             <div className="heritage-content">
-              <span>ისტორიული ძეგლი</span>
-              <h3>კვეტერას ციხე-ქალაქი</h3>
-              <p>
-                შუა საუკუნეების მნიშვნელოვანი ციხე-ქალაქი, რომელიც ახმეტის
-                მუნიციპალიტეტის ერთ-ერთი გამორჩეული ისტორიული ძეგლია.
-              </p>
-              <Link to="/statues">გაიგე მეტი </Link>
+              <span>{t("home.historical_monument")}</span>
+              <h3>{t("home.kvetera_title")}</h3>
+              <p>{t("home.kvetera_desc")}</p>
+              <Link to="/statues">{t("home.learn_more")}</Link>
             </div>
           </article>
 
           <article className="heritage-card">
-            <div className="heritage-image alaverdi" role="img" aria-label="ალავერდის მონასტერი"></div>
+            <div
+              className="heritage-image alaverdi"
+              role="img"
+              aria-label={t("home.alaverdi_title")}
+            ></div>
 
             <div className="heritage-content">
-              <span>არქიტექტურული ძეგლი</span>
-              <h3>ალავერდის მონასტერი</h3>
-              <p>
-                ალაზნის ველზე მდებარე ერთ-ერთი უმნიშვნელოვანესი ქართული
-                საეკლესიო და კულტურული ძეგლი.
-              </p>
-              <Link to="/statues">გაიგე მეტი </Link>
+              <span>{t("home.arch_monument")}</span>
+              <h3>{t("home.alaverdi_title")}</h3>
+              <p>{t("home.alaverdi_desc")}</p>
+              <Link to="/statues">{t("home.learn_more")}</Link>
             </div>
           </article>
 
-          <article className="heritage-card" >
-            <div className="heritage-image tusheti" role="img" aria-label="თუშეთი"></div>
+          <article className="heritage-card">
+            <div
+              className="heritage-image tusheti"
+              role="img"
+              aria-label={t("home.tusheti_title")}
+            ></div>
 
             <div className="heritage-content">
-              <span>კულტურული ლანდშაფტი</span>
-              <h3>თუშეთი</h3>
-              <p>
-                უნიკალური მთიანი რეგიონი, რომელიც ცნობილია ტრადიციული
-                სოფლებით, კოშკებითა და კულტურული მემკვიდრეობით.
-              </p>
-              <Link to="/statues">გაიგე მეტი </Link>
+              <span>{t("home.cultural_landscape")}</span>
+              <h3>{t("home.tusheti_title")}</h3>
+              <p>{t("home.tusheti_desc")}</p>
+              <Link to="/statues">{t("home.learn_more")}</Link>
             </div>
           </article>
         </div>
       </section>
 
-     
       <section className="about">
-        <div className="about-image" role="img" aria-label="ახმეტის ხედი"></div>
+        <div
+          className="about-image"
+          role="img"
+          aria-label={t("home.subtitle")}
+        ></div>
 
         <div className="about-content">
-          <span className="section-label">იცნობდე ახმეტას</span>
+          <span className="section-label">{t("home.know_akheta")}</span>
 
           <h2 id="titleB">
-            ისტორია,
+            {t("home.about_title_1")}
             <br />
-            რომელიც საუკუნეებს აერთიანებს
+            {t("home.about_title_2")}
           </h2>
 
-          <p>
-            ახმეტის ტერიტორიაზე ადამიანის ცხოვრების კვალი ქვის ხანიდან მოდის.
-            მუნიციპალიტეტის ისტორიული მემკვიდრეობა მოიცავს სხვადასხვა
-            პერიოდის არქიტექტურულ და არქეოლოგიურ ძეგლებს.
-          </p>
-
-          <p>
-            განსაკუთრებით მნიშვნელოვანია ალავერდი, ქვეტერა, მატნის ცხრაკარა,
-            ბახტრიონის ციხე და თუშეთის ისტორიულ-კულტურული ლანდშაფტი.
-          </p>
+          <p>{t("home.about_p1")}</p>
+          <p>{t("home.about_p2")}</p>
 
           <Link to="/statues" className="main-button">
-            აღმოაჩინე მეტი
+            {t("home.discover_more")}
           </Link>
         </div>
       </section>
 
-     
       <section className="stats">
         <div className="stats-title">
           <span>AKHMETA</span>
-          <h2>ზოგადი ინფორმაცია</h2>
+          <h2>{t("home.general_info")}</h2>
         </div>
 
         <div className="stats-grid">
           <div className="stat">
             <strong>4</strong>
-            <span>მუზეუმი</span>
+            <span>{t("home.stat_museums")}</span>
           </div>
 
           <div className="stat">
             <strong>150+</strong>
-            <span>კულტურული ობიექტი</span>
+            <span>{t("home.stat_cultural_obj")}</span>
           </div>
 
           <div className="stat">
             <strong>2200+</strong>
-            <span>კმ² ტერიტორია</span>
+            <span>{t("home.stat_area")}</span>
           </div>
-
-        
         </div>
       </section>
 
-  
       <section className="cta">
-        <span>აღმოაჩინე ახმეტა</span>
+        <span>{t("home.discover_akheta")}</span>
 
         <h2>
-          შენი მოგზაურობა
+          {t("home.cta_title_1")}
           <br />
-          აქ იწყება
+          {t("home.cta_title_2")}
         </h2>
 
-        <p>მოძებნე მუზეუმები, ძეგლები და ისტორიული ადგილები.</p>
+        <p>{t("home.cta_desc")}</p>
 
-        <Link to="/museums">დაიწყე აღმოჩენა </Link>
+        <Link to="/museums">{t("home.start_discovering")}</Link>
       </section>
 
-      
-<section className="map-section">
-  <h2>იპოვე რუკაზე</h2>
-  <p>ახმეტის მუნიციპალიტეტი</p>
+      <section className="map-section">
+        <h2>{t("home.find_on_map")}</h2>
+        <p>{t("home.municipality_label")}</p>
 
-<div className="div">
-  <iframe 
-    src="https://www.google.com/maps/d/u/0/embed?mid=14nnckl3xrhV91bPu7SzaOfbDvpAtBCw&ehbc=2E312F" 
-    loading="lazy"
-    allowFullScreen
-    referrerPolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
-
-</section>
-
+        <div className="div">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=14nnckl3xrhV91bPu7SzaOfbDvpAtBCw&ehbc=2E312F"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Akhmeta Map"
+          ></iframe>
+        </div>
+      </section>
     </main>
   );
 }

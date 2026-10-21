@@ -1,17 +1,20 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { statues } from '../json';
+import { useTranslation } from 'react-i18next';
 import './statues.css';
 
-const FALLBACK_IMAGE =
-  'https://via.placeholder.com/800x500?text=No+Image+Available';
+const FALLBACK_IMAGE = 'https://via.placeholder.com/800x500?text=No+Image+Available';
 
 function StatueDetailsPage() {
   const { id } = useParams();
   const [searchParams] = useSearchParams();
+  const { t } = useTranslation();
 
   const page = searchParams.get('page') || '1';
 
-  const item = statues.find(
+  // ვიღებთ ძეგლების სიას i18next-დან
+  const statuesList = t('statues_list', { returnObjects: true }) || [];
+
+  const item = statuesList.find(
     (statue) => String(statue.N) === String(id)
   );
 
@@ -25,58 +28,54 @@ function StatueDetailsPage() {
             paddingTop: '4rem',
           }}
         >
-          <h2>ობიექტი ვერ მოიძებნა</h2>
+          <h2>{t('statue_details.not_found')}</h2>
 
           <Link
             to={`/statues?page=${page}`}
             className="btn-back"
           >
-              უკან დაბრუნება
+            {t('statue_details.back_to_list')}
           </Link>
         </div>
       </div>
     );
   }
 
-  const hasPhoto =
-    typeof item.ფოტო === 'string' &&
-    item.ფოტო.trim() !== '';
+  const hasPhoto = typeof item.image === 'string' && item.image.trim() !== '';
+  const hasHistory = typeof item.history === 'string' && item.history.trim() !== '';
+  
+  const addressText = item.address?.trim() || '';
+  const statueName = item.name?.trim() || '';
 
-  const hasHistory =
-    typeof item.ისტორია === 'string' &&
-    item.ისტორია.trim() !== '';
-const addressText = item['ფაქტიური მისამართი']?.trim() || '';
-const statueName = item['დასახელება']?.trim() || '';
+  const searchQuery = [
+    statueName,
+    addressText,
+    'Akhmeta Municipality',
+    'Kakheti',
+    'Georgia',
+  ]
+    .filter(Boolean)
+    .join(', ');
 
-const searchQuery = [
-  statueName,
-  addressText,
-  'Akhmeta Municipality',
-  'Kakheti',
-  'Georgia',
-]
-  .filter(Boolean)
-  .join(', ');
+  const googleMapsUrl = searchQuery
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`
+    : null;
 
-const googleMapsUrl = searchQuery
-  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`
-  : null;
   return (
     <div className="page-container">
       <div className="details-wrapper">
-
         <Link
           to={`/statues?page=${page}`}
           className="btn-back"
         >
-            სიასთან დაბრუნება
+          {t('statue_details.back_to_list')}
         </Link>
 
         <div className="details-card">
           <div className="details-hero-image">
             <img
               loading="lazy"
-              src={hasPhoto ? item.ფოტო : FALLBACK_IMAGE}
+              src={hasPhoto ? item.image : FALLBACK_IMAGE}
               alt={statueName}
               onError={(e) => {
                 e.currentTarget.onerror = null;
@@ -89,16 +88,9 @@ const googleMapsUrl = searchQuery
             <div className="details-header-group">
               <h1>{statueName}</h1>
 
-              {item[
-                'მუნიციპალური თუ ეროვნული მნიშვნელობის'
-              ] && (
+              {item.type && (
                 <span className="card-badge">
-                  {
-                    item[
-                      'მუნიციპალური თუ ეროვნული მნიშვნელობის'
-                    ]
-                  }{' '}
-                  მნიშვნელობის
+                  {item.type}
                 </span>
               )}
             </div>
@@ -106,80 +98,75 @@ const googleMapsUrl = searchQuery
             <div className="info-grid">
               <div className="info-tile">
                 <span className="info-tile-label">
-                  მისამართი
+                  {t('statue_details.address')}
                 </span>
 
                 <span className="info-tile-value">
-               {googleMapsUrl ? (
-                <a
-                  href={googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="map-link"
-                  title="რუკაზე ნახვა"
-                >
-      {addressText || 'რუკაზე ნახვა'}
-    </a>
-  ) : (
-    'მითითებული არ არის'
-  )}
-</span>
-              </div>
-
-              <div className="info-tile">
-                <span className="info-tile-label">
-                  ტიპი
-                </span>
-
-                <span className="info-tile-value">
-                  {item['რელიგიური თუ საერო'] ||
-                    'მითითებული არ არის'}
+                  {googleMapsUrl ? (
+                    <a
+                      href={googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="map-link"
+                      title={t('statue_details.view_on_maps')}
+                    >
+                      {addressText || t('statue_details.view_on_maps')}
+                    </a>
+                  ) : (
+                    t('statue_details.not_specified')
+                  )}
                 </span>
               </div>
 
               <div className="info-tile">
                 <span className="info-tile-label">
-                  ხელმძღვანელი
+                  {t('statue_details.category')}
                 </span>
 
                 <span className="info-tile-value">
-                  {item[
-                    'ხელმძღვანელის სახელი/გვარი - ასეთის არსებობის შემთხვევაში'
-                  ] || 'მითითებული არ არის'}
+                  {item.category || t('statue_details.not_specified')}
                 </span>
               </div>
 
               <div className="info-tile">
                 <span className="info-tile-label">
-                  საკონტაქტო ნომერი
+                  {t('statue_details.manager')}
                 </span>
 
                 <span className="info-tile-value">
-                  {item['საკონტაქტო ტელ. ნომერი'] ||
-                    'მითითებული არ არის'}
+                  {item.manager || t('statue_details.not_specified')}
+                </span>
+              </div>
+
+              <div className="info-tile">
+                <span className="info-tile-label">
+                  {t('statue_details.phone')}
+                </span>
+
+                <span className="info-tile-value">
+                  {item.phone || t('statue_details.not_specified')}
                 </span>
               </div>
             </div>
 
             <div className="history-section">
-              <h2>ისტორია</h2>
+              <h2>{t('statue_details.history')}</h2>
 
               {hasHistory ? (
                 <p className="history-text">
-                  {item.ისტორია}
+                  {item.history}
                 </p>
               ) : (
                 <p className="history-placeholder">
-                  ისტორიული ინფორმაცია მოცემული ძეგლისთვის
-                  ჯერჯერობით არ არის დამატებული.
+                  {t('statue_details.no_history')}
                 </p>
               )}
             </div>
 
-            {item.კომენტარი && (
+            {item.comment && (
               <div className="comment-box">
-                <strong>შენიშვნა:</strong>{' '}
-                {item.კომენტარი}
+                <strong>{t('statue_details.note')}</strong>{' '}
+                {item.comment}
               </div>
             )}
           </div>

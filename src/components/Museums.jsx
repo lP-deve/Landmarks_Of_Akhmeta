@@ -1,17 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Museums.css";
-import { museums } from "../json";
 import { FaSearch } from 'react-icons/fa';
 
 function Museums() {
-  const [filter, setFilter] = useState("ყველა");
+  const { t } = useTranslation();
+  const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
 
-  const filteredMuseums = museums.filter((museum) => {
-    const matchesFilter =
-      filter === "ყველა" || museum.type === filter;
+  // წამოვიღოთ მუზეუმების სია მიმდინარე ენის JSON-იდან
+  const museumsList = t("museums_list", { returnObjects: true }) || [];
 
+  const filteredMuseums = museumsList.filter((museum) => {
+    // ფილტრის შემოწმება ტიპის მიხედვით
+    const matchesFilter =
+      filter === "all" ||
+      (filter === "national" && (museum.type === "ეროვნული" || museum.type === "National")) ||
+      (filter === "municipal" && (museum.type === "მუნიციპალური" || museum.type === "Municipal"));
+
+    // ძებნის შემოწმება სახელსა და მისამართში
     const matchesSearch =
       museum.name.toLowerCase().includes(search.toLowerCase()) ||
       museum.address.toLowerCase().includes(search.toLowerCase());
@@ -24,57 +32,49 @@ function Museums() {
 
       <section className="museums-header">
         <div className="bg">
-        <span>AKHMETA</span>
-
-        <h1>მუზეუმები</h1>
-
-        <p>
-          აღმოაჩინე ახმეტის მუნიციპალიტეტის მუზეუმები
-          და მათი უნიკალური ისტორია.
-          </p>
-          </div>
+          <span>AKHMETA</span>
+          <h1>{t("museums_page.title")}</h1>
+          <p>{t("museums_page.subtitle")}</p>
+        </div>
       </section>
 
       <section className="museum-controls">
 
         <div className="search-wrapper">
-        <FaSearch className="search-icon" />
+          <FaSearch className="search-icon" />
           <input
             type="text"
             className="search-input"
-            placeholder="მოძებნე მუზეუმი..."
+            placeholder={t("museums_page.search_placeholder")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
 
         <div className="museum-filters">
-
           <button
-            className={filter === "ყველა" ? "active" : ""}
-            onClick={() => setFilter("ყველა")}
+            className={filter === "all" ? "active" : ""}
+            onClick={() => setFilter("all")}
           >
-            ყველა
+            {t("museums_page.filter_all")}
           </button>
 
           <button
-            className={filter === "ეროვნული" ? "active" : ""}
-            onClick={() => setFilter("ეროვნული")}
+            className={filter === "national" ? "active" : ""}
+            onClick={() => setFilter("national")}
           >
-            ეროვნული
+            {t("museums_page.filter_national")}
           </button>
 
           <button
-            className={filter === "მუნიციპალური" ? "active" : ""}
-            onClick={() => setFilter("მუნიციპალური")}
+            className={filter === "municipal" ? "active" : ""}
+            onClick={() => setFilter("municipal")}
           >
-            მუნიციპალური
+            {t("museums_page.filter_municipal")}
           </button>
-
         </div>
 
       </section>
-
 
       <section className="museum-grid">
 
@@ -88,7 +88,6 @@ function Museums() {
             >
 
               <div className="museum-card-image">
-
                 <img
                   src={museum.image}
                   alt={museum.name}
@@ -96,29 +95,25 @@ function Museums() {
 
                 <span
                   className={
-                    museum.type === "ეროვნული"
+                    museum.type === "ეროვნული" || museum.type === "National"
                       ? "badge national"
                       : "badge"
                   }
                 >
                   {museum.type}
                 </span>
-
               </div>
 
               <div className="museum-card-content">
-
                 <h2>{museum.name}</h2>
 
                 <p className="address">
-                   {museum.address}
+                  {museum.address}
                 </p>
 
-
                 <div className="view-details">
-                  დეტალურად ნახვა 
+                  {t("museums_page.view_details")}
                 </div>
-
               </div>
 
             </Link>
@@ -126,10 +121,8 @@ function Museums() {
           ))
         ) : (
           <div className="no-results">
-            <h2>მუზეუმი ვერ მოიძებნა</h2>
-            <p>
-              სცადე სხვა საძიებო სიტყვა ან ფილტრი.
-            </p>
+            <h2>{t("museums_page.no_results_title")}</h2>
+            <p>{t("museums_page.no_results_desc")}</p>
           </div>
         )}
 
@@ -138,6 +131,5 @@ function Museums() {
     </main>
   );
 }
-
 
 export default Museums;

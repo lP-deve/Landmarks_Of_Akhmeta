@@ -5,29 +5,28 @@ import {
   FaCompass, 
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Footers.css';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="site-footer">
       <div className="footer-container">
         
-        
         <div className="footer-column brand-col">
           <div className="footer-logo">
             <FaCompass className="logo-icon" />
-            <h3>ახმეტის ღირსშესანიშნაობები</h3>
+            <h3>{t('footer.title')}</h3>
           </div>
           <p className="footer-desc">
-            აღმოაჩინეთ ახმეტის მუნიციპალიტეტის მდიდარი ისტორია, უძველესი ციხე-სიმაგრეები, 
-            მონასტრები და თუშეთის ულამაზესი მთის პეიზაჟები.
+            {t('footer.desc')}
           </p>
         </div>
 
-       
         <div className="footer-column contact-col">
-          <h4>კონტაქტი & რეგიონი</h4>
-          
+          <h4>{t('footer.contact_title')}</h4>
           
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
@@ -37,11 +36,10 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              ახმეტის მუნიციპალიტეტი, კახეთი, საქართველო
+              {t('footer.address')}
             </a>
           </div>
 
-        
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
             <a 
@@ -63,13 +61,12 @@ const Footer = () => {
           </div>
         </div>
 
-     
         <div className="footer-column nav-col">
-          <h4>ნავიგაცია</h4>
+          <h4>{t('footer.nav_title')}</h4>
           <ul className="footer-links">
-            <li><Link to="/home">მთავარი</Link></li>
-            <li><Link to="/museums">მუზეუმები</Link></li>
-            <li><Link to="/statues">ძეგლები</Link></li>
+            <li><Link to="/">{t('footer.home')}</Link></li>
+            <li><Link to="/museums">{t('footer.museums')}</Link></li>
+            <li><Link to="/statues">{t('footer.statues')}</Link></li>
           </ul>
         </div>
 
@@ -78,9 +75,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p>
-            &copy; {new Date().getFullYear()}  ყველა უფლება დაცულია.
+            &copy; {new Date().getFullYear()} {t('footer.rights_reserved')}
           </p>
-          <p>ახმეტის ღირსშესანიშნაობები</p>
+          <p>{t('footer.title')}</p>
         </div>
       </div>
     </footer>

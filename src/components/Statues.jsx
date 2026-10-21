@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { statues } from '../json';
+import { useTranslation } from 'react-i18next';
 import './statues.css';
 import { FaSearch } from 'react-icons/fa';
 
@@ -8,23 +8,28 @@ const ITEMS_PER_BATCH = 9;
 const FALLBACK_IMAGE = 'https://www.pinterest.com/pin/249527635599756601/';
 
 function Statues() {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_BATCH);
   const observerTarget = useRef(null);
 
+  // ავტომატურად იღებს ძეგლების სიას მიმდინარე ენის JSON-იდან
+  const statuesList = t('statues_list', { returnObjects: true }) || [];
 
-  const filteredStatues = statues.filter((item) => {
+  const filteredStatues = statuesList.filter((item) => {
     const search = searchTerm.toLowerCase().trim();
     if (!search) return true;
 
     return (
-      item.დასახელება?.toLowerCase().includes(search) ||
-      item['ფაქტიური მისამართი']?.toLowerCase().includes(search) ||
-      item['რელიგიური თუ საერო']?.toLowerCase().includes(search)
+      item.name?.toLowerCase().includes(search) ||
+      item.address?.toLowerCase().includes(search) ||
+      item.category?.toLowerCase().includes(search)
     );
   });
+
   const visibleItems = filteredStatues.slice(0, visibleCount);
   const hasMore = visibleCount < filteredStatues.length;
+
   const loadMore = useCallback(() => {
     if (hasMore) {
       setVisibleCount((prevCount) => prevCount + ITEMS_PER_BATCH);
@@ -50,6 +55,7 @@ function Statues() {
       if (element) observer.unobserve(element);
     };
   }, [loadMore]);
+
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
     setVisibleCount(ITEMS_PER_BATCH);
@@ -59,31 +65,29 @@ function Statues() {
     <div className="page-container">
       <header className="main-header">
         <div className="bg">
-          <p>Akhmeta</p>
-          <h1>კულტურული მემკვიდრეობის ძეგლები</h1>
-          <p>ახმეტის მუნიციპალიტეტის ისტორიული ობიექტები</p>
+          <p>{t('statues_page.subtitle')}</p>
+          <h1>{t('statues_page.title')}</h1>
+          <p>{t('statues_page.description')}</p>
         </div>
       </header>
 
       <div className="content-wrappers">
-
         <div className="search-wrapper">
           <FaSearch className="search-icon" />
           <input
             type="text"
             className="search-input"
-            placeholder="მოძებნე ძეგლი..."
+            placeholder={t('statues_page.search_placeholder')}
             value={searchTerm}
             onChange={handleSearch}
           />
-          
         </div>
 
         <div className="statues-grid">
           {visibleItems.map((item) => {
             const image =
-              typeof item.ფოტო === 'string' && item.ფოტო.trim() !== ''
-                ? item.ფოტო
+              typeof item.image === 'string' && item.image.trim() !== ''
+                ? item.image
                 : FALLBACK_IMAGE;
 
             return (
@@ -95,42 +99,34 @@ function Statues() {
                 <div className="card-image-wrapper">
                   <img
                     src={image}
-                    alt={
-                      item.დასახელება?.trim() ||
-                      'კულტურული მემკვიდრეობის ძეგლი'
-                    }
+                    alt={item.name?.trim() || 'Cultural Heritage Monument'}
                     onError={(e) => {
                       e.currentTarget.onerror = null;
                       e.currentTarget.src = FALLBACK_IMAGE;
                     }}
                   />
 
-                  {item['მუნიციპალური თუ ეროვნული მნიშვნელობის'] && (
-                    <span className="card-badge">
-                      {item['მუნიციპალური თუ ეროვნული მნიშვნელობის']}
-                    </span>
+                  {item.type && (
+                    <span className="card-badge">{item.type}</span>
                   )}
                 </div>
 
                 <div className="card-content">
                   <div>
                     <h2 className="card-title">
-                      {item.დასახელება?.trim() ||
-                        'სახელი მითითებული არ არის'}
+                      {item.name?.trim() || 'Name not specified'}
                     </h2>
 
                     <p className="card-address">
-                      {item['ფაქტიური მისამართი'] ||
-                        'მისამართი მითითებული არ არის'}
+                      {item.address || 'Address not specified'}
                     </p>
                   </div>
 
                   <div className="card-footer">
-                    <span>
-                      {item['რელიგიური თუ საერო'] || 'ინფორმაცია არ არის'}
+                    <span>{item.category || 'No information'}</span>
+                    <span className="link-arrow">
+                      {t('statues_page.read_more')}
                     </span>
-
-                    <span className="link-arrow">ვრცლად</span>
                   </div>
                 </div>
               </Link>
@@ -140,18 +136,17 @@ function Statues() {
 
         {filteredStatues.length === 0 && (
           <div className="no-results">
-            <h2>ძეგლი ვერ მოიძებნა</h2>
-            <p>სცადე სხვა საძიებო სიტყვა.</p>
+            <h2>{t('statues_page.not_found_title')}</h2>
+            <p>{t('statues_page.not_found_desc')}</p>
           </div>
         )}
 
-       
         {hasMore && (
           <div
             ref={observerTarget}
             style={{ height: '40px', margin: '20px 0', textAlign: 'center' }}
           >
-            <p className="loading-text">იტვირთება...</p>
+            <p className="loading-text">{t('statues_page.loading')}</p>
           </div>
         )}
       </div>
