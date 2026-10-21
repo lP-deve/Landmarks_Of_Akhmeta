@@ -44,6 +44,11 @@
   //     "ფოტო": "https://madloba.info/media/images/Tserkov_Svyatogo_Georgiya_v_Zem_cCopOgQ.max-1200x630.format-jpeg.jpg", 
   //     "ისტორია": "ზემო ალვანის წმინდა გიორგის ეკლესია — ეკლესია ახმეტის მუნიციპალიტეტში, დგას სოფელ ზემო ალვანის ჩრდილოეთით ერთ კილომეტრზე, სასაფლაოზე. აგებულია XIX საუკუნის მეორე ნახევარში ძმები გიგაურების მიერ. ეკლესია დარბაზულია (10,5 X 5,4 მ), ნაგებია რიყის ქვით."
   //   },
+  /////////////////////////////
+  //////////////////
+  /////////////////////////
+  /////////////////////////
+  //////////////////////////
     // {
     //   "N": 33,
     //   "დასახელება": "წმ.მარიამის ეკლესია",
@@ -55,7 +60,7 @@
     //   "ღია თუ დახურული": null,
     //   "რელიგიური თუ საერო": "საერო,რელიგიური",
     //   "კომენტარი": null,
-    //   "ფოტო": "", 
+    //   "ფოტო": "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAa-ngMbv5JjIC1-gI9iWJpVGryAcOgigqlqV-YQCy_rXiLA2rNN2XVTz8-xjD0RXxVR1vDDWCnx0hHNpe_svtC42ZdUuUsT-F0jQBlUV3FJGc6qzIwEXxzpTur5RDrdS7VO0ENN3uAz3TXzfgKxA6MPSUVbuqVIG5DMfeNaIu6W64UoYOrAmYGuGGDUdlisLR_GQmhtumJYGSH5KLqWnlxFEQecguZvdwQvs16FnH1420ET9c4C1ZKVQcczZaIOd3tfZnFzdkY29qh3GD9Ir5NBBc_oMAX5W9e4hXh2p3LqQyCdZ_AtFfy7MDdYfl5sN6r4fRzS-iEV97JjWVL0FDaErfvQmsR8MbKEFIHMsKDLc8ttOtOb5A0m6J-7Hkm2Msajw8a5HlwkWkUJJp5Zl12PHv4EAC28-&4u16383&5m1&2e1&callback=none&r_url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fd%2Fu%2F0%2Fembed&key=AIzaSyDn8VcdTA0P4Smn8HU3ygF-UbnWKVYdXkA&token=44236", 
     //   "ისტორია": "ზემო ალვანის წმინდა მარიამის ეკლესია — ახმეტის მუნიციპალიტეტში მდებარე ეკლესია, რომელიც დგას სოფელ ზემო ალვანის სამხრეთით, სასაფლაოზე. აშენებულია XVIII საუკუნეში."
     // },
   
@@ -340,7 +345,11 @@
     //   "ფოტო": "", 
     //   "ისტორია": ""
     // },
-   
+   //////////////////////////
+   ///////////////////////////
+   ///////////////////////////
+   ///////////////////////////
+   //////////////////////////
     // {
     //   "N": 108,
     //   "დასახელება": "იოანე ნათლისმცემლის ხატი",
@@ -352,7 +361,7 @@
     //   "ღია თუ დახურული": null,
     //   "რელიგიური თუ საერო": "საერო,რელიგიური",
     //   "კომენტარი": null,
-    //   "ფოტო": "", 
+    //   "ფოტო": "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAa-ngMbHMys68CE1_V2PGerNqyDpU96D3Mv9rxU9psdBH45LvhLOLnGQoz2U2mQJb6xUyTLxVoOxxHPhjW3uSmajiHZM6A5rRUBHeZSwhYD2v4ovRYtDx5L1ISYmAF5HNTaiEuwXcInvf1qc6rd81lsJCWT6MH4xPFehjM4Cdz4gY998OEdL1k9PZd0LqkSoHI98Hjmw-1hp08Z6y31sTtdXZOYT55XR1UznRa-H689HwjSUv0B--OyWLK6uUnZBSdXKUZ1TkSxJEiiywSmPKiuqQz5JpHx_wB166XJF6cZD2xqkINvRGmJ7Q16G5wBxvFP9F-F7OatkmpCXz-4W457W2uUD-Skvj-rRnkQp_KonTC27SsI6glV4B0K6vjRDI9PcwVMkwtRZCrMp3SmxbDHO44hRPj2X7PfsgKb8CJfAUU5wzQ&4u16383&5m1&2e1&callback=none&r_url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fd%2Fu%2F0%2Fembed&key=AIzaSyDn8VcdTA0P4Smn8HU3ygF-UbnWKVYdXkA&token=116604", 
     //   "ისტორია": ""
     // },
     // {
@@ -530,6 +539,10 @@
   //     "ფოტო": "", 
   //     "ისტორია": ""
   // },
+  ///////////////////
+  ////////////////////
+  //////////////////////
+  /////////////////////
     //  {
     //   "N": 151,
     //   "დასახელება": "მთავარანგელოზის ეკლესია",
@@ -541,7 +554,7 @@
     //   "ღია თუ დახურული": null,
     //   "რელიგიური თუ საერო": "საერო,რელიგიური",
     //   "კომენტარი": null,
-    //   "ფოტო": "", 
+    //   "ფოტო": "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAa-ngMa7ny5CnfY-Zu0eV6IiIUKiSdnS5DHC4970wK1fVxqrDI-1D1Ec0QitnoPFYm1_G4PC8eEqmqSdkiSbcLn1bb2vnLmCDOdmL0jg_6W55Nus6XQMTcDeaEY2Gg6SCJ-h0AhuH8rjlaRhub-kvu-jKmCO5L3F2kI8e5Lc9ebYrf_cSD4kvxrae7ngPZdp6GRH0EcKpLKyV3zFgdlqE75bVmeG1YRn5khZiZPtHmhmtlfkqks1iRBEjAkkIC-88wJbpWfQaihcYE56BB1Zfed6tLaJpJZTyut9oOxHt6uXVEGR0pKDZK5vcwK855pW7OgXrUaVIOHZ7QDpKQ2UGZYCmMILpu14HcOmeIv_63Hy-U65qeNsdnKL-auohWVHYHnV6kC5HBKZiKp9Rzm_hGpCUz-i75k&4u16383&5m1&2e1&callback=none&r_url=https%3A%2F%2Fwww.google.com%2Fmaps%2Fd%2Fu%2F0%2Fembed&key=AIzaSyDn8VcdTA0P4Smn8HU3ygF-UbnWKVYdXkA&token=64604", 
     //   "ისტორია": "მაღრაანის მთავარანგელოზთა ეკლესია — ეკლესია ახმეტის მუნიციპალიტეტში, დგას სოფელ მაღრაანის სკოლის ეზოში. ეკლესიის კანკელის წყობაში, აღსავლის კარის მარჯვნივ, ჩადგმული ყოფილა მარმარილოს ფილა შვიდსტრიქონიანი მხედრული წარწერით, რომლის თანახმადაც ეკლესია 1767 წელს აუგია მეფე ერეკლე II-ის ფარეშთუხუცეს გივი ნათანლისშვილს."
     // },
   

@@ -9,17 +9,17 @@ function Museums() {
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
 
-  // წამოვიღოთ მუზეუმების სია მიმდინარე ენის JSON-იდან
+  
   const museumsList = t("museums_list", { returnObjects: true }) || [];
 
   const filteredMuseums = museumsList.filter((museum) => {
-    // ფილტრის შემოწმება ტიპის მიხედვით
+    
     const matchesFilter =
       filter === "all" ||
       (filter === "national" && (museum.type === "ეროვნული" || museum.type === "National")) ||
       (filter === "municipal" && (museum.type === "მუნიციპალური" || museum.type === "Municipal"));
 
-    // ძებნის შემოწმება სახელსა და მისამართში
+ 
     const matchesSearch =
       museum.name.toLowerCase().includes(search.toLowerCase()) ||
       museum.address.toLowerCase().includes(search.toLowerCase());

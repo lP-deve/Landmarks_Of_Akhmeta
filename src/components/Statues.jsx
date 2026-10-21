@@ -13,7 +13,7 @@ function Statues() {
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_BATCH);
   const observerTarget = useRef(null);
 
-  // ავტომატურად იღებს ძეგლების სიას მიმდინარე ენის JSON-იდან
+  
   const statuesList = t('statues_list', { returnObjects: true }) || [];
 
   const filteredStatues = statuesList.filter((item) => {

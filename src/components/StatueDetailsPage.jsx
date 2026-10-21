@@ -11,7 +11,6 @@ function StatueDetailsPage() {
 
   const page = searchParams.get('page') || '1';
 
-  // ვიღებთ ძეგლების სიას i18next-დან
   const statuesList = t('statues_list', { returnObjects: true }) || [];
 
   const item = statuesList.find(
@@ -47,15 +46,15 @@ function StatueDetailsPage() {
   const addressText = item.address?.trim() || '';
   const statueName = item.name?.trim() || '';
 
-  const searchQuery = [
-    statueName,
-    addressText,
-    'Akhmeta Municipality',
-    'Kakheti',
-    'Georgia',
-  ]
-    .filter(Boolean)
-    .join(', ');
+  // "village territory"-ს ამოღება, რათa Google Maps-მა უკეთ აღიქვას სოფლის სახელი
+  const cleanAddress = addressText
+    .replace(/village territory/gi, '')
+    .replace(/ტერიტორია/gi, '')
+    .trim();
+
+  // იწყობა ზუსტი საძიებო მოთხოვნა: "Bzasakdari, Akhaldaba, Akhmeta, Georgia"
+  const queryParts = [statueName, cleanAddress, 'Akhmeta', 'Georgia'].filter(Boolean);
+  const searchQuery = queryParts.join(', ');
 
   const googleMapsUrl = searchQuery
     ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchQuery)}`
